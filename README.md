@@ -35,7 +35,8 @@ A second module, [`hansbuyck_workflow`](hansbuyck_workflow/), adds the sales-to-
 
 1. **Contact form → opportunity.** Every submission of the website contact form creates an **opportunity** in the *Website* sales team's pipeline. There is no leads step: the team has *Leads* switched off and is the website's default CRM team. Name, e-mail, phone, subject and question go into the matching fields. Address, postcode, municipality, interest and privacy consent go into the description.
 2. **Opportunity → quotation.** Use Odoo's standard *New Quotation* button on the opportunity.
-3. **Confirmed quotation → project with execution task.** On confirmation, Odoo creates a project from the template **"Uitvoering ramen en deuren"**:
+3. **Confirmed quotation → opportunity won.** Confirming the quotation marks its opportunity as **won** (won stage, 100 % probability, with a note in the chatter). An opportunity that was marked lost is re-opened and set to won as well.
+4. **Confirmed quotation → project with execution task.** On confirmation, Odoo creates a project from the template **"Uitvoering ramen en deuren"**:
    - Stages: *Te plannen → Ingepland → In uitvoering → Opgeleverd*.
    - It contains the task **"Uitvoering van de werken"**, linked to the customer and the sales order, with a checklist. The task starts in *Te plannen*.
    - The project manager (the quote's salesperson if the template has none) gets a to-do **"Uitvoering inplannen"**, due in 2 days.
@@ -87,8 +88,9 @@ Install it on a fresh database, or on a database where the website has not been 
 odoo -d <database> -u hansbuyck_workflow --test-tags /hansbuyck_workflow:TestHansBuyckWorkflow,/hansbuyck_workflow:TestHansBuyckWebsiteForm --stop-after-init
 ```
 
-The 6 tests check:
+The 9 tests check:
 - website form → opportunity in the Website team,
+- confirmation marks the opportunity won (also when it was lost), and a quotation alone does not,
 - confirming with and without the installation service creates exactly one project with the execution task, the stages and the to-do,
 - re-confirming creates no duplicate,
 - drafts get no project,

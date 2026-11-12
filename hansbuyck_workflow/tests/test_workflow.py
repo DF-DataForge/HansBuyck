@@ -58,6 +58,39 @@ class TestHansBuyckWorkflow(TransactionCase):
         self.assertFalse(order.project_id)
         self.assertFalse(self.env["project.project"].search([("name", "ilike", order.name)]))
 
+    def _opportunity(self):
+        return self.env["crm.lead"].create({
+            "name": "Offerte nieuwe ramen",
+            "type": "opportunity",
+            "partner_id": self.partner.id,
+            "team_id": self.env.ref("hansbuyck_workflow.crm_team_website").id,
+        })
+
+    def test_confirm_marks_opportunity_won(self):
+        lead = self._opportunity()
+        order = self._order([self.goods, self.plaatsing])
+        order.opportunity_id = lead
+        self.assertEqual(lead.won_status, "pending")
+        order.action_confirm()
+        self.assertEqual(lead.won_status, "won")
+        self.assertTrue(lead.stage_id.is_won)
+        self.assertEqual(lead.probability, 100)
+
+    def test_confirm_reopens_lost_opportunity_as_won(self):
+        lead = self._opportunity()
+        order = self._order([self.goods])
+        order.opportunity_id = lead
+        lead.action_set_lost()
+        self.assertEqual(lead.won_status, "lost")
+        order.action_confirm()
+        self.assertTrue(lead.active)
+        self.assertEqual(lead.won_status, "won")
+
+    def test_quotation_alone_does_not_win(self):
+        lead = self._opportunity()
+        self._order([self.goods]).opportunity_id = lead
+        self.assertEqual(lead.won_status, "pending")
+
     def test_template_untouched(self):
         self._order([self.goods]).action_confirm()
         self.assertTrue(self.template.is_template)

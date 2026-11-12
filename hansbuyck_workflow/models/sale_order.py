@@ -8,9 +8,18 @@ class SaleOrder(models.Model):
 
     def _action_confirm(self):
         res = super()._action_confirm()
+        self.sudo()._hb_mark_opportunity_won()
         if not self.env.context.get("disable_project_task_generation"):
             self.sudo()._hb_ensure_execution_project()
         return res
+
+    def _hb_mark_opportunity_won(self):
+        """A confirmed quotation wins its opportunity (also if it was marked lost)."""
+        for order in self:
+            lead = order.opportunity_id
+            if lead and lead.won_status != "won":
+                lead.action_set_won()
+                lead.message_post(body=self.env._("Marked as won: quotation %s was confirmed.", order._get_html_link()))
 
     def _hb_ensure_execution_project(self):
         """Every confirmed quotation gets an execution project.
