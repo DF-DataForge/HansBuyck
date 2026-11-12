@@ -20,6 +20,6 @@ class ProjectTask(models.Model):
     def write(self, vals):
         res = super().write(vals)
         # Planned in the Gantt view (project_enterprise) -> "Ingepland"
-        if vals.get("planned_date_begin") and "stage_id" not in vals:
+        if vals.get("planned_date_begin") and "stage_id" not in vals and not self.env.context.get("hb_planning_sync"):
             self._hb_execution_tasks()._hb_move_to_planned()
         return res

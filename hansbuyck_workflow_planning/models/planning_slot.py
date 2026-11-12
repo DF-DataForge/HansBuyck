@@ -32,6 +32,9 @@ class PlanningSlot(models.Model):
 
     def _hb_safe_sync_execution_task(self):
         """Never let the task sync block saving a shift or confirming a quotation."""
+        if self.env.context.get("hb_planning_sync"):
+            return  # already syncing: avoid shift <-> task ping-pong
+        self = self.with_context(hb_planning_sync=True)
         try:
             with self.env.cr.savepoint():
                 self._hb_sync_execution_task()
