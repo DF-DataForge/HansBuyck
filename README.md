@@ -29,6 +29,25 @@ Other features:
 - **Language**: Dutch (nl_BE) is set as the website language.
 - **Editable**: every section is a normal Odoo block, so text, images and buttons can be changed in the website builder.
 
+## Workflow: website → CRM → project (`hansbuyck_workflow`)
+
+A second module, [`hansbuyck_workflow`](hansbuyck_workflow/), adds the sales-to-execution flow:
+
+1. **Contact form → opportunity.** Every submission of the website contact form creates an **opportunity** in the *Website* sales team's pipeline. There is no leads step: the team has *Leads* switched off and is the website's default CRM team. Name, e-mail, phone, subject and question go into the matching fields. Address, postcode, municipality, interest and privacy consent go into the description.
+2. **Opportunity → quotation.** Use Odoo's standard *New Quotation* button on the opportunity.
+3. **Confirmed quotation → project with execution task.** On confirmation, Odoo creates a project from the template **"Uitvoering ramen en deuren"**:
+   - Stages: *Te plannen → Ingepland → In uitvoering → Opgeleverd*.
+   - It contains the task **"Uitvoering van de werken"**, linked to the customer and the sales order, with a checklist. The task starts in *Te plannen*.
+   - The project manager (the quote's salesperson if the template has none) gets a to-do **"Uitvoering inplannen"**, due in 2 days.
+   - Add the service **"Plaatsing ramen en deuren"** to the quote: standard Odoo then creates the project and links the task to that order line. A safety net creates the same project for quotations without that service, so **every** confirmed quotation gets one.
+   - Re-confirming an order does not create a second project.
+
+**Planning the task:**
+- **Community**: set assignees, a deadline and allocated hours, move the task to *Ingepland*, and use the project's *Calendar* view.
+- **Enterprise**: the *Gantt* view and the *Planning* app use the task's planned start and end dates.
+
+Everything is ordinary configuration (sales team, project template, stages, product) and can be changed in Odoo without code.
+
 ## Installation
 
 Requirements:
@@ -42,7 +61,7 @@ Steps:
 2. Install the module:
 
 ```bash
-odoo -d <database> -i website_hansbuyck
+odoo -d <database> -i website_hansbuyck,hansbuyck_workflow
 ```
 
 The install hook does three things:
@@ -61,6 +80,19 @@ Install it on a fresh database, or on a database where the website has not been 
   - premium amounts that still mention Eandis/Infrax (now Fluvius).
 - **Instagram**: the original 4 posts are linked. The Instagram profile name is not on the old site; add it to the company's social links if you want a "follow us" button.
 - The external *proxi.tools* video player on the old homepage was not migrated. The YouTube video is.
+
+## Tests
+
+```bash
+odoo -d <database> -u hansbuyck_workflow --test-tags /hansbuyck_workflow:TestHansBuyckWorkflow,/hansbuyck_workflow:TestHansBuyckWebsiteForm --stop-after-init
+```
+
+The 6 tests check:
+- website form → opportunity in the Website team,
+- confirming with and without the installation service creates exactly one project with the execution task, the stages and the to-do,
+- re-confirming creates no duplicate,
+- drafts get no project,
+- the template stays unchanged.
 
 ## Development
 

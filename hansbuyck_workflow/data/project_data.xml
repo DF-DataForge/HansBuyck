@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Fases voor de uitvoering -->
+    <record id="task_stage_te_plannen" model="project.task.type">
+        <field name="name">Te plannen</field>
+        <field name="sequence">1</field>
+    </record>
+    <record id="task_stage_ingepland" model="project.task.type">
+        <field name="name">Ingepland</field>
+        <field name="sequence">2</field>
+    </record>
+    <record id="task_stage_in_uitvoering" model="project.task.type">
+        <field name="name">In uitvoering</field>
+        <field name="sequence">3</field>
+    </record>
+    <record id="task_stage_opgeleverd" model="project.task.type">
+        <field name="name">Opgeleverd</field>
+        <field name="sequence">4</field>
+        <field name="fold" eval="True"/>
+    </record>
+
+    <record id="project_tag_uitvoering" model="project.tags">
+        <field name="name">Uitvoering</field>
+    </record>
+
+    <!-- Projectsjabloon -->
+    <record id="project_template_uitvoering" model="project.project">
+        <field name="name">Uitvoering ramen en deuren</field>
+        <field name="is_template" eval="True"/>
+        <field name="allow_billable" eval="True"/>
+        <field name="type_ids" eval="[(6, 0, [ref('task_stage_te_plannen'), ref('task_stage_ingepland'), ref('task_stage_in_uitvoering'), ref('task_stage_opgeleverd')])]"/>
+        <field name="description"><![CDATA[<p>Project aangemaakt bij bevestiging van de offerte. Plan de uitvoeringstaak in (datum + plaatsers) en volg ze op tot de oplevering.</p>]]></field>
+    </record>
+
+    <!-- De uitvoeringstaak die in elk project terechtkomt -->
+    <record id="task_template_uitvoering" model="project.task">
+        <field name="name">Uitvoering van de werken</field>
+        <field name="project_id" ref="project_template_uitvoering"/>
+        <field name="stage_id" ref="task_stage_te_plannen"/>
+        <field name="tag_ids" eval="[(6, 0, [ref('project_tag_uitvoering')])]"/>
+        <field name="description"><![CDATA[
+<p><strong>Checklist uitvoering</strong></p>
+<ul>
+<li>Definitieve opmeting ter plaatse bevestigd</li>
+<li>Materiaal besteld en leverdatum gekend</li>
+<li>Plaatsingsdatum afgesproken met de klant</li>
+<li>Plaatsers toegewezen</li>
+<li>Plaatsing uitgevoerd en opgeleverd</li>
+</ul>]]></field>
+    </record>
+</odoo>

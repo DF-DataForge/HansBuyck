@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Verkoopteam voor aanvragen via de website: rechtstreeks opportuniteiten (geen leads) -->
+    <record id="crm_team_website" model="crm.team">
+        <field name="name">Website</field>
+        <field name="use_leads" eval="False"/>
+        <field name="use_opportunities" eval="True"/>
+        <field name="sequence">5</field>
+    </record>
+
+    <record id="base.default_website" model="website">
+        <field name="crm_default_team_id" ref="crm_team_website"/>
+    </record>
+</odoo>

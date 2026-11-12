@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Dienst die op de offerte komt; maakt bij bevestiging het project aan (standaard Odoo) -->
+    <record id="product_plaatsing" model="product.template">
+        <field name="name">Plaatsing ramen en deuren</field>
+        <field name="type">service</field>
+        <field name="sale_ok" eval="True"/>
+        <field name="purchase_ok" eval="False"/>
+        <field name="list_price">0.0</field>
+        <field name="invoice_policy">order</field>
+        <field name="service_tracking">project_only</field>
+        <field name="project_template_id" ref="project_template_uitvoering"/>
+        <field name="description_sale">Plaatsing door ons eigen personeel, volgens de regels van het vakmanschap.</field>
+    </record>
+</odoo>
