@@ -43,10 +43,44 @@ A second module, [`hansbuyck_workflow`](hansbuyck_workflow/), adds the sales-to-
    - Add the service **"Plaatsing ramen en deuren"** to the quote: standard Odoo then creates the project and links the task to that order line. A safety net creates the same project for quotations without that service, so **every** confirmed quotation gets one.
    - Re-confirming an order does not create a second project.
 
-**Planning the task:**
-- **Community**: set assignees, a deadline and allocated hours, move the task to *Ingepland*, and use the project's *Calendar* view.
-- **Enterprise**: the *Gantt* view and the *Planning* app use the task's planned start and end dates.
+**Planning the task:** see the Enterprise module below. Without it (Community), set assignees, a deadline and allocated hours, move the task to *Ingepland*, and use the project's *Calendar* view.
 
+## Enterprise: planning the execution (`hansbuyck_workflow_planning`)
+
+A third module, [`hansbuyck_workflow_planning`](hansbuyck_workflow_planning/), connects the execution to the **Planning** app and the project **Gantt** view. It needs Odoo Enterprise (`sale_planning`, `project_enterprise`).
+
+- **The service is sold per day.** "Plaatsing ramen en deuren" is set to unit *Days*, *Plan Services* on, role **Plaatser**. When the quotation is confirmed, Sales Planning creates a **shift to plan** for that number of days (1 day = 8 h).
+- **Safety net:** a confirmed quotation without that service still gets one shift of 1 day for the Plaatser role.
+- **Planning in the Planning app:** when a shift gets a fitter and a date, the task "Uitvoering van de werken" moves to *Ingepland*. It gets the same start and end dates, and the fitter is added as an assignee.
+- **Planning in the Gantt view:** giving the task a start date in the project's Gantt view also moves it to *Ingepland*.
+- **Linking shifts to the project:** if Planning's project integration is installed (so shifts have a *Project* field), the shift is linked to the order's project.
+
+> ⚠️ **Written without access to the Enterprise source code.** The Enterprise fields it uses were written from knowledge of earlier versions:
+> - `product.template.planning_enabled` and `planning_role_id`,
+> - `planning.slot.sale_line_id`, `resource_id`, `start_datetime`, `end_datetime`, `allocated_hours`, `role_id`, `project_id`,
+> - `project.task.planned_date_begin`.
+>
+> The code checks that each field exists before using it, so a renamed field logs a warning instead of breaking the install. **Run the tests on staging** (see below) and check the install log for `hansbuyck_workflow_planning:` warnings.
+
+## Installation
+
+Requirements:
+
+- Odoo **20.0** with the `website` and `website_crm` apps.
+- For `hansbuyck_workflow_planning`: **Odoo Enterprise** with Planning and Project.
+- Custom modules need **Odoo.sh, Cloudpepper or on-premise**. Odoo Online cannot install them.
+
+### Cloudpepper
+
+1. In Cloudpepper, open the server, then *Git repositories* (custom addons), and add this repository with branch `claude/adoring-euler-3385gy`, or the branch you merge it into. For a private repository, add Cloudpepper's deploy key to GitHub first.
+2. Attach the repository to the **staging** instance and deploy/pull. Cloudpepper adds it to the addons path.
+3. In Odoo: *Apps → Update Apps List*, then install in this order:
+   - **Hans Buyck – Website** (`website_hansbuyck`)
+   - **Hans Buyck – Werkstroom website → CRM → project** (`hansbuyck_workflow`)
+   - **Hans Buyck – Uitvoering inplannen (Enterprise)** (`hansbuyck_workflow_planning`)
+4. For later updates: pull in Cloudpepper, then *Upgrade* the modules in Apps, or restart with `-u <module>`.
+
+### Command line (on-premise, or Cloudpepper's shell)
 Everything is ordinary configuration (sales team, project template, stages, product) and can be changed in Odoo without code.
 
 ## Installation
@@ -56,16 +90,11 @@ Requirements:
 - Odoo **20.0** with the `website` and `website_crm` apps.
 - Custom modules need **Odoo.sh or on-premise**. Odoo Online cannot install them.
 
-Steps:
-
-1. Add this repository to your addons path (on Odoo.sh: push it to the project's repository).
-2. Install the module:
-
 ```bash
-odoo -d <database> -i website_hansbuyck,hansbuyck_workflow
+odoo -d <database> -i website_hansbuyck,hansbuyck_workflow,hansbuyck_workflow_planning
 ```
 
-The install hook does three things:
+The website module's install hook does three things:
 
 - replaces the default top menu with the Hans Buyck menu, including the mega menu,
 - activates nl_BE as the website language,
@@ -84,11 +113,22 @@ Install it on a fresh database, or on a database where the website has not been 
 
 ## Tests
 
+Run these on the **staging** database. They create test records but roll everything back.
+
 ```bash
-odoo -d <database> -u hansbuyck_workflow --test-tags /hansbuyck_workflow:TestHansBuyckWorkflow,/hansbuyck_workflow:TestHansBuyckWebsiteForm --stop-after-init
+odoo -d <staging-db> -u hansbuyck_workflow,hansbuyck_workflow_planning --test-tags /hansbuyck_workflow:TestHansBuyckWorkflow,/hansbuyck_workflow:TestHansBuyckWebsiteForm,/hansbuyck_workflow_planning:TestHansBuyckPlanning --stop-after-init
 ```
 
-The 9 tests check:
+The Enterprise tests (`TestHansBuyckPlanning`) check:
+- the product is set to days, planning on, role Plaatser,
+- a confirmed quotation with 2 days of installation gives a 16 h shift,
+- the safety-net shift for quotations without the service,
+- assigning a fitter and date to the shift moves the task to *Ingepland* with dates and assignee,
+- Gantt planning moves the task too.
+
+So far these only ran against stand-ins for the Enterprise modules, which proves the code runs but not that the field names match real Enterprise.
+
+The 9 workflow tests (Community) check:
 - website form → opportunity in the Website team,
 - confirmation marks the opportunity won (also when it was lost), and a quotation alone does not,
 - confirming with and without the installation service creates exactly one project with the execution task, the stages and the to-do,
