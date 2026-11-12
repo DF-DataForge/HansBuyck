@@ -9,6 +9,11 @@ def post_init_hook(env):
     Done in Python (not XML) so that a renamed field in a future Enterprise
     version only logs a warning instead of blocking the installation.
     """
+    slot_fields = env["planning.slot"]._fields
+    _logger.info(
+        "hansbuyck_workflow_planning: planning.slot relational/date fields: %s",
+        sorted(name for name, f in slot_fields.items() if f.type in ("many2one", "many2many", "datetime", "date")),
+    )
     product = env.ref("hansbuyck_workflow.product_plaatsing", raise_if_not_found=False)
     role = env.ref("hansbuyck_workflow_planning.planning_role_plaatser", raise_if_not_found=False)
     if not product:

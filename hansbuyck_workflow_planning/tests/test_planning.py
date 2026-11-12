@@ -2,6 +2,8 @@ from datetime import datetime, timedelta
 
 from odoo.tests import TransactionCase, tagged
 
+from ..models.planning_slot import END_FIELDS, RESOURCE_FIELDS, START_FIELDS
+
 
 @tagged("post_install", "-at_install")
 class TestHansBuyckPlanning(TransactionCase):
@@ -16,7 +18,17 @@ class TestHansBuyckPlanning(TransactionCase):
         cls.todo = cls.env.ref("hansbuyck_workflow.task_stage_te_plannen")
         cls.planned = cls.env.ref("hansbuyck_workflow.task_stage_ingepland")
         cls.fitter_user = cls.env["res.users"].create({"name": "Plaatser Piet", "login": "plaatser_piet"})
-        cls.fitter = cls.env["resource.resource"].create({"name": "Plaatser Piet", "user_id": cls.fitter_user.id})
+        Slot = cls.env["planning.slot"]
+        cls.resource_field = Slot._hb_field(RESOURCE_FIELDS)
+        cls.start_field = Slot._hb_field(START_FIELDS)
+        cls.end_field = Slot._hb_field(END_FIELDS)
+        comodel = Slot._fields[cls.resource_field].comodel_name if cls.resource_field else None
+        if comodel == "res.users":
+            cls.fitter = cls.fitter_user
+        elif comodel == "hr.employee":
+            cls.fitter = cls.env["hr.employee"].create({"name": "Plaatser Piet", "user_id": cls.fitter_user.id})
+        elif comodel:
+            cls.fitter = cls.env[comodel].create({"name": "Plaatser Piet", "user_id": cls.fitter_user.id})
 
     def _confirmed(self, lines):
         order = self.env["sale.order"].create({
@@ -54,11 +66,20 @@ class TestHansBuyckPlanning(TransactionCase):
         task = self._task(order)
         self.assertEqual(task.stage_id, self.todo)
         start = datetime.now().replace(hour=8, minute=0, second=0, microsecond=0) + timedelta(days=3)
+        self.assertTrue(self.resource_field and self.start_field, "planning.slot fields not recognised, see install log")
         slot = order._hb_order_slots()[:1]
-        slot.write({"resource_id": self.fitter.id, "start_datetime": start, "end_datetime": start + timedelta(hours=8)})
+        vals = {self.resource_field: self.fitter.id, self.start_field: start}
+        if self.end_field:
+            vals[self.end_field] = start + timedelta(hours=8)
+        slot.write(vals)
         self.assertEqual(task.stage_id, self.planned)
         self.assertIn(self.fitter_user, task.user_ids)
         self.assertEqual(task.planned_date_begin, start)
+
+    def test_unassigned_slot_does_not_crash_or_plan(self):
+        """Regression: creating shifts (as Sales Planning does) must never raise."""
+        order = self._confirmed([(self.goods, 1), (self.plaatsing, 1)])
+        self.assertEqual(self._task(order).stage_id, self.todo)
 
     def test_gantt_planning_moves_task(self):
         order = self._confirmed([(self.goods, 1)])

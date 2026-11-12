@@ -15,7 +15,12 @@ class SaleOrder(models.Model):
         res = super()._action_confirm()
         if not self.env.context.get("disable_project_task_generation"):
             for order in self.sudo():
-                order._hb_ensure_planning_slot()
+                try:
+                    with self.env.cr.savepoint():
+                        order._hb_ensure_planning_slot()
+                except Exception:
+                    # Planning is a convenience: never block the confirmation itself
+                    _logger.exception("hansbuyck_workflow_planning: planning step failed for %s", order.name)
         return res
 
     # ------------------------------------------------------------------ helpers
