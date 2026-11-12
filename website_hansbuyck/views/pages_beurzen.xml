@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="view_beurzen" name="Beurzen">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+
+<section class="hb_page_header oe_img_bg o_bg_img_center o_cc o_cc5 pt128 pb96 " data-snippet="s_cover" data-name="Pagina-header" style="background-image: url('/website_hansbuyck/static/src/img/prod_verandas_09.webp');">
+    <div class="o_we_bg_filter"/>
+    <div class="container">
+        <nav aria-label="breadcrumb"><ol class="breadcrumb mb-4"><li class="breadcrumb-item"><a href="/">Home</a></li></ol></nav>
+        <span class="hb_eyebrow text-white">Beurzen</span>
+        <h1 class="text-white">Beurzenkalender</h1>
+        <p class="hb_lead text-white-75 mb-0 mt-3" style="max-width: 44rem;">Wil u onze ramen en deuren in levende lijve zien? Kom naar onze toonzaal in Kortrijk of naar één van onze beurzen.</p>
+    </div>
+</section>
+<section class="pt96 pb96" data-snippet="s_three_columns" data-name="Beurzen" style="background-color: var(--hb-light);">
+    <div class="container">
+        <div class="row g-4">
+<div class="col-md-6 col-lg-3">
+    <a href="/beurzen/bis-gent" class="hb_card">
+        <div class="hb_card_img bg-white d-flex align-items-center justify-content-center p-4"><img src="/website_hansbuyck/static/src/img/fair_bis_gent.webp" alt="Bisbeurs Gent" loading="lazy" class="img-fluid" style="object-fit: contain;"/></div>
+        <div class="hb_card_body">
+            <span class="small text-muted text-uppercase"><i class="oi oi-filled me-1" data-icon="location_on"/>Flanders Expo, Gent</span>
+            <h2>Bisbeurs Gent</h2>
+            <span class="hb_card_more">Meer info <i class="oi oi-filled ms-1" data-icon="east"/></span>
+        </div>
+    </a>
+</div>
+<div class="col-md-6 col-lg-3">
+    <a href="/beurzen/bouwxpo-kortrijk" class="hb_card">
+        <div class="hb_card_img bg-white d-flex align-items-center justify-content-center p-4"><img src="/website_hansbuyck/static/src/img/fair_bouwxpo_kortrijk.webp" alt="BouwXpo Kortrijk" loading="lazy" class="img-fluid" style="object-fit: contain;"/></div>
+        <div class="hb_card_body">
+            <span class="small text-muted text-uppercase"><i class="oi oi-filled me-1" data-icon="location_on"/>Kortrijk Xpo</span>
+            <h2>BouwXpo Kortrijk</h2>
+            <span class="hb_card_more">Meer info <i class="oi oi-filled ms-1" data-icon="east"/></span>
+        </div>
+    </a>
+</div>
+<div class="col-md-6 col-lg-3">
+    <a href="/beurzen/bouwen-wonen-nu-brugge" class="hb_card">
+        <div class="hb_card_img bg-white d-flex align-items-center justify-content-center p-4"><img src="/website_hansbuyck/static/src/img/fair_bouwen_wonen_brugge.webp" alt="Bouwen &amp; Wonen “NU” Brugge" loading="lazy" class="img-fluid" style="object-fit: contain;"/></div>
+        <div class="hb_card_body">
+            <span class="small text-muted text-uppercase"><i class="oi oi-filled me-1" data-icon="location_on"/>Brugge</span>
+            <h2>Bouwen &amp; Wonen “NU” Brugge</h2>
+            <span class="hb_card_more">Meer info <i class="oi oi-filled ms-1" data-icon="east"/></span>
+        </div>
+    </a>
+</div>
+<div class="col-md-6 col-lg-3">
+    <a href="/beurzen/bouwbeurs-roeselare" class="hb_card">
+        <div class="hb_card_img bg-white d-flex align-items-center justify-content-center p-4"><img src="/website_hansbuyck/static/src/img/fair_bouwbeurs_roeselare.webp" alt="Bouwbeurs Roeselare" loading="lazy" class="img-fluid" style="object-fit: contain;"/></div>
+        <div class="hb_card_body">
+            <span class="small text-muted text-uppercase"><i class="oi oi-filled me-1" data-icon="location_on"/>Roeselare</span>
+            <h2>Bouwbeurs Roeselare</h2>
+            <span class="hb_card_more">Meer info <i class="oi oi-filled ms-1" data-icon="east"/></span>
+        </div>
+    </a>
+</div>
+        </div>
+    </div>
+</section>
+
+<section class="hb_cta s_call_to_action o_cc o_cc1 pt80 pb80" data-snippet="s_call_to_action" data-name="Call to action" style="background-color: var(--hb-yellow);">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+                <h2 class="hb_title_lg mb-3">Liever meteen in de toonzaal?</h2>
+                <p class="hb_lead mb-0">U kunt ons vrijblijvend een bezoek brengen in Kortrijk – open iedere dag of na afspraak.</p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+                <a href="tel:+3256253949" class="hb_cta_phone d-inline-block mb-3"><i class="oi oi-filled me-2" data-icon="phone"/>056 25 39 49</a><br/>
+                <a href="/contact" class="btn btn-dark btn-lg me-2 mb-2">Vrijblijvende offerte</a>
+                <a href="/producten" class="btn btn-outline-dark btn-lg mb-2">Onze producten</a>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_beurzen" model="website.page">
+        <field name="name">Beurzen</field>
+        <field name="url">/beurzen</field>
+        <field name="view_id" ref="view_beurzen"/>
+        <field name="is_published" eval="True"/>
+        <field name="track" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+        <field name="website_meta_title">Beurzenkalender ramen en deuren | Hans Buyck Kortrijk</field>
+        <field name="website_meta_description">Ontmoet Hans Buyck op de bouwbeurzen: bis Gent, BouwXpo Kortrijk, Bouwen &amp; Wonen Brugge en de Bouwbeurs Roeselare.</field>
+    </record>
+
+    <template id="view_beurs_bis_gent" name="Beurs: Bisbeurs Gent">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+
+<section class="hb_page_header oe_img_bg o_bg_img_center o_cc o_cc5 pt128 pb96 " data-snippet="s_cover" data-name="Pagina-header" style="background-image: url('/website_hansbuyck/static/src/img/prod_verandas_09.webp');">
+    <div class="o_we_bg_filter"/>
+    <div class="container">
+        <nav aria-label="breadcrumb"><ol class="breadcrumb mb-4"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/beurzen">Beurzen</a></li></ol></nav>
+        <span class="hb_eyebrow text-white">Flanders Expo, Gent</span>
+        <h1 class="text-white">Bisbeurs Gent</h1>
+        
+    </div>
+</section>
+<section class="pt80 pb96" data-snippet="s_text_image" data-name="Beurs">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <img src="/website_hansbuyck/static/src/img/fair_bis_gent.webp" alt="Bisbeurs Gent" class="img-fluid mb-4 rounded shadow-sm" style="max-height: 260px;"/>
+                <div class="hb_lead"><p>Flanders Expo Gent: bis, dé grootste bouwbeurs van Vlaanderen, met meer dan 500 exposanten in de hallen van Flanders Expo.</p>
+<p>Een nieuwe woning bouwen of een huis kopen en verbouwen: het wordt steeds moeilijker om het financieel rond te krijgen. Op bis vindt u alle specialisten samen.</p>
+<div class="hb_infobox"><p class="mb-0"><strong>Let wel:</strong> u moet vooraf online registreren, tickets aan de kassa zijn niet meer mogelijk.</p></div></div>
+                <p class="mt-4"><a href="/beurzen" class="hb_arrow_link">Alle beurzen <i class="oi oi-filled" data-icon="east"/></a></p>
+            </div>
+            <div class="col-lg-4">
+                <div class="hb_aside">
+                <div class="hb_aside_card bg-white">
+                    <h3 class="h5 text-uppercase mb-2">Andere beurzen</h3>
+                    <ul class="list-group list-group-flush"><li class="list-group-item active"><a href="/beurzen/bis-gent">Bisbeurs Gent</a></li><li class="list-group-item"><a href="/beurzen/bouwxpo-kortrijk">BouwXpo Kortrijk</a></li><li class="list-group-item"><a href="/beurzen/bouwen-wonen-nu-brugge">Bouwen &amp; Wonen “NU” Brugge</a></li><li class="list-group-item"><a href="/beurzen/bouwbeurs-roeselare">Bouwbeurs Roeselare</a></li></ul>
+                </div>
+                <div class="hb_aside_card mt-4 o_cc o_cc5">
+                    <h3 class="h4 text-uppercase text-white">Toonzaal Kortrijk</h3>
+                    <p class="mb-3">O.L.Vrouwestraat 31, 8500 Kortrijk<br/>Open iedere dag of na afspraak.</p>
+                    <a href="/contact" class="btn btn-primary w-100">Maak een afspraak</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_beurs_bis_gent" model="website.page">
+        <field name="name">Bisbeurs Gent</field>
+        <field name="url">/beurzen/bis-gent</field>
+        <field name="view_id" ref="view_beurs_bis_gent"/>
+        <field name="is_published" eval="True"/>
+        <field name="track" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+        <field name="website_meta_title">Bisbeurs Gent | Hans Buyck ramen en deuren</field>
+        <field name="website_meta_description">Hans Buyck stelt zijn ramen en deuren tentoon op Bisbeurs Gent.</field>
+    </record>
+
+    <template id="view_beurs_bouwxpo_kortrijk" name="Beurs: BouwXpo Kortrijk">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+
+<section class="hb_page_header oe_img_bg o_bg_img_center o_cc o_cc5 pt128 pb96 " data-snippet="s_cover" data-name="Pagina-header" style="background-image: url('/website_hansbuyck/static/src/img/prod_verandas_09.webp');">
+    <div class="o_we_bg_filter"/>
+    <div class="container">
+        <nav aria-label="breadcrumb"><ol class="breadcrumb mb-4"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/beurzen">Beurzen</a></li></ol></nav>
+        <span class="hb_eyebrow text-white">Kortrijk Xpo</span>
+        <h1 class="text-white">BouwXpo Kortrijk</h1>
+        
+    </div>
+</section>
+<section class="pt80 pb96" data-snippet="s_text_image" data-name="Beurs">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <img src="/website_hansbuyck/static/src/img/fair_bouwxpo_kortrijk.webp" alt="BouwXpo Kortrijk" class="img-fluid mb-4 rounded shadow-sm" style="max-height: 260px;"/>
+                <div class="hb_lead"><p>Inspiratieplatform voor iedereen die een eigen woning wil bouwen, kopen, inrichten, renoveren, optimaliseren en/of energiezuinig maken.</p>
+<p>BouwXpo bundelt gedurende 3 dagen (inclusief verlengd weekend) de belangrijkste aanbieders en specialisten uit de branche onder één dak: van woningbouwbedrijven, makelaars en projectontwikkelaars tot producenten, verdelers en installateurs van (ver)bouwmaterialen, -producten en -diensten.</p></div>
+                <p class="mt-4"><a href="/beurzen" class="hb_arrow_link">Alle beurzen <i class="oi oi-filled" data-icon="east"/></a></p>
+            </div>
+            <div class="col-lg-4">
+                <div class="hb_aside">
+                <div class="hb_aside_card bg-white">
+                    <h3 class="h5 text-uppercase mb-2">Andere beurzen</h3>
+                    <ul class="list-group list-group-flush"><li class="list-group-item"><a href="/beurzen/bis-gent">Bisbeurs Gent</a></li><li class="list-group-item active"><a href="/beurzen/bouwxpo-kortrijk">BouwXpo Kortrijk</a></li><li class="list-group-item"><a href="/beurzen/bouwen-wonen-nu-brugge">Bouwen &amp; Wonen “NU” Brugge</a></li><li class="list-group-item"><a href="/beurzen/bouwbeurs-roeselare">Bouwbeurs Roeselare</a></li></ul>
+                </div>
+                <div class="hb_aside_card mt-4 o_cc o_cc5">
+                    <h3 class="h4 text-uppercase text-white">Toonzaal Kortrijk</h3>
+                    <p class="mb-3">O.L.Vrouwestraat 31, 8500 Kortrijk<br/>Open iedere dag of na afspraak.</p>
+                    <a href="/contact" class="btn btn-primary w-100">Maak een afspraak</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_beurs_bouwxpo_kortrijk" model="website.page">
+        <field name="name">BouwXpo Kortrijk</field>
+        <field name="url">/beurzen/bouwxpo-kortrijk</field>
+        <field name="view_id" ref="view_beurs_bouwxpo_kortrijk"/>
+        <field name="is_published" eval="True"/>
+        <field name="track" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+        <field name="website_meta_title">BouwXpo Kortrijk | Hans Buyck ramen en deuren</field>
+        <field name="website_meta_description">Hans Buyck stelt zijn ramen en deuren tentoon op BouwXpo Kortrijk.</field>
+    </record>
+
+    <template id="view_beurs_bouwen_wonen_brugge" name="Beurs: Bouwen en Wonen “NU” Brugge">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+
+<section class="hb_page_header oe_img_bg o_bg_img_center o_cc o_cc5 pt128 pb96 " data-snippet="s_cover" data-name="Pagina-header" style="background-image: url('/website_hansbuyck/static/src/img/prod_verandas_09.webp');">
+    <div class="o_we_bg_filter"/>
+    <div class="container">
+        <nav aria-label="breadcrumb"><ol class="breadcrumb mb-4"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/beurzen">Beurzen</a></li></ol></nav>
+        <span class="hb_eyebrow text-white">Brugge</span>
+        <h1 class="text-white">Bouwen &amp; Wonen “NU” Brugge</h1>
+        
+    </div>
+</section>
+<section class="pt80 pb96" data-snippet="s_text_image" data-name="Beurs">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <img src="/website_hansbuyck/static/src/img/fair_bouwen_wonen_brugge.webp" alt="Bouwen &amp; Wonen “NU” Brugge" class="img-fluid mb-4 rounded shadow-sm" style="max-height: 260px;"/>
+                <div class="hb_lead"><p>Al 50 jaar wordt in Brugge de beurs Bouwen Wonen Nu georganiseerd. Het begon in 1953 in de Stadshallen onder het Belfort – voor de eerste editie werd zelfs een volledige prefabwoning gebouwd in de Hallen.</p>
+<p>Sindsdien is Bouwen Wonen Nu uitgegroeid tot één van de belangrijkste bouw-, interieur- en tuinbeurzen uit de regio.</p></div>
+                <p class="mt-4"><a href="/beurzen" class="hb_arrow_link">Alle beurzen <i class="oi oi-filled" data-icon="east"/></a></p>
+            </div>
+            <div class="col-lg-4">
+                <div class="hb_aside">
+                <div class="hb_aside_card bg-white">
+                    <h3 class="h5 text-uppercase mb-2">Andere beurzen</h3>
+                    <ul class="list-group list-group-flush"><li class="list-group-item"><a href="/beurzen/bis-gent">Bisbeurs Gent</a></li><li class="list-group-item"><a href="/beurzen/bouwxpo-kortrijk">BouwXpo Kortrijk</a></li><li class="list-group-item active"><a href="/beurzen/bouwen-wonen-nu-brugge">Bouwen &amp; Wonen “NU” Brugge</a></li><li class="list-group-item"><a href="/beurzen/bouwbeurs-roeselare">Bouwbeurs Roeselare</a></li></ul>
+                </div>
+                <div class="hb_aside_card mt-4 o_cc o_cc5">
+                    <h3 class="h4 text-uppercase text-white">Toonzaal Kortrijk</h3>
+                    <p class="mb-3">O.L.Vrouwestraat 31, 8500 Kortrijk<br/>Open iedere dag of na afspraak.</p>
+                    <a href="/contact" class="btn btn-primary w-100">Maak een afspraak</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_beurs_bouwen_wonen_brugge" model="website.page">
+        <field name="name">Bouwen en Wonen “NU” Brugge</field>
+        <field name="url">/beurzen/bouwen-wonen-nu-brugge</field>
+        <field name="view_id" ref="view_beurs_bouwen_wonen_brugge"/>
+        <field name="is_published" eval="True"/>
+        <field name="track" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+        <field name="website_meta_title">Bouwen &amp; Wonen “NU” Brugge | Hans Buyck ramen en deuren</field>
+        <field name="website_meta_description">Hans Buyck stelt zijn ramen en deuren tentoon op Bouwen &amp; Wonen “NU” Brugge.</field>
+    </record>
+
+    <template id="view_beurs_bouwbeurs_roeselare" name="Beurs: Bouwbeurs Roeselare">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+
+<section class="hb_page_header oe_img_bg o_bg_img_center o_cc o_cc5 pt128 pb96 " data-snippet="s_cover" data-name="Pagina-header" style="background-image: url('/website_hansbuyck/static/src/img/prod_verandas_09.webp');">
+    <div class="o_we_bg_filter"/>
+    <div class="container">
+        <nav aria-label="breadcrumb"><ol class="breadcrumb mb-4"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item"><a href="/beurzen">Beurzen</a></li></ol></nav>
+        <span class="hb_eyebrow text-white">Roeselare</span>
+        <h1 class="text-white">Bouwbeurs Roeselare</h1>
+        
+    </div>
+</section>
+<section class="pt80 pb96" data-snippet="s_text_image" data-name="Beurs">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <img src="/website_hansbuyck/static/src/img/fair_bouwbeurs_roeselare.webp" alt="Bouwbeurs Roeselare" class="img-fluid mb-4 rounded shadow-sm" style="max-height: 260px;"/>
+                <div class="hb_lead"><p>Bouwbeurs open van 10/02/2024 tot en met 18/02/2024.</p>
+<ul class="hb_checklist">
+<li>Zaterdagen en weekdagen: van 13u tot 18u</li>
+<li>Zondagen: van 10u tot 18u</li>
+</ul></div>
+                <p class="mt-4"><a href="/beurzen" class="hb_arrow_link">Alle beurzen <i class="oi oi-filled" data-icon="east"/></a></p>
+            </div>
+            <div class="col-lg-4">
+                <div class="hb_aside">
+                <div class="hb_aside_card bg-white">
+                    <h3 class="h5 text-uppercase mb-2">Andere beurzen</h3>
+                    <ul class="list-group list-group-flush"><li class="list-group-item"><a href="/beurzen/bis-gent">Bisbeurs Gent</a></li><li class="list-group-item"><a href="/beurzen/bouwxpo-kortrijk">BouwXpo Kortrijk</a></li><li class="list-group-item"><a href="/beurzen/bouwen-wonen-nu-brugge">Bouwen &amp; Wonen “NU” Brugge</a></li><li class="list-group-item active"><a href="/beurzen/bouwbeurs-roeselare">Bouwbeurs Roeselare</a></li></ul>
+                </div>
+                <div class="hb_aside_card mt-4 o_cc o_cc5">
+                    <h3 class="h4 text-uppercase text-white">Toonzaal Kortrijk</h3>
+                    <p class="mb-3">O.L.Vrouwestraat 31, 8500 Kortrijk<br/>Open iedere dag of na afspraak.</p>
+                    <a href="/contact" class="btn btn-primary w-100">Maak een afspraak</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_beurs_bouwbeurs_roeselare" model="website.page">
+        <field name="name">Bouwbeurs Roeselare</field>
+        <field name="url">/beurzen/bouwbeurs-roeselare</field>
+        <field name="view_id" ref="view_beurs_bouwbeurs_roeselare"/>
+        <field name="is_published" eval="True"/>
+        <field name="track" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+        <field name="website_meta_title">Bouwbeurs Roeselare | Hans Buyck ramen en deuren</field>
+        <field name="website_meta_description">Hans Buyck stelt zijn ramen en deuren tentoon op Bouwbeurs Roeselare.</field>
+    </record>
+</odoo>

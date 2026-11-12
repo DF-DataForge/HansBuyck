@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="view_vragen" name="Vragen">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+
+<section class="hb_page_header oe_img_bg o_bg_img_center o_cc o_cc5 pt128 pb96 " data-snippet="s_cover" data-name="Pagina-header" style="background-image: url('/website_hansbuyck/static/src/img/prod_lichtstraten_05.webp');">
+    <div class="o_we_bg_filter"/>
+    <div class="container">
+        <nav aria-label="breadcrumb"><ol class="breadcrumb mb-4"><li class="breadcrumb-item"><a href="/">Home</a></li></ol></nav>
+        <span class="hb_eyebrow text-white">Vragen</span>
+        <h1 class="text-white">Vragen over het plaatsen van ramen en deuren</h1>
+        <p class="hb_lead text-white-75 mb-0 mt-3" style="max-width: 44rem;">Ramen en deuren, ook in de regio Kortrijk? Hier vindt u antwoorden op de meest gestelde vragen. Staat uw vraag er niet bij? Stel ze ons gerust.</p>
+    </div>
+</section>
+<section class="pt80 pb96" data-snippet="s_faq_collapse" data-name="FAQ" style="background-color: var(--hb-light);">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <div class="accordion hb_faq" id="hb_faq">
+<div class="accordion-item">
+    <h2 class="accordion-header" id="hb_faq_h0">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hb_faq_c0" aria-expanded="true" aria-controls="hb_faq_c0">Wordt er steeds een plaatsbezoek gedaan vooraleer een prijs op te maken?</button>
+    </h2>
+    <div id="hb_faq_c0" class="accordion-collapse collapse show" aria-labelledby="hb_faq_h0" data-bs-parent="#hb_faq">
+        <div class="accordion-body"><p>We kunnen een raming maken aan de hand van de afmetingen die u meebrengt naar de showroom, maar om een correcte offerte te kunnen maken is een plaatsbezoek noodzakelijk.</p></div>
+    </div>
+</div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="hb_faq_h1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hb_faq_c1" aria-expanded="false" aria-controls="hb_faq_c1">Onze ramen zijn nog in enkel glas, wat nu?</button>
+    </h2>
+    <div id="hb_faq_c1" class="accordion-collapse collapse" aria-labelledby="hb_faq_h1" data-bs-parent="#hb_faq">
+        <div class="accordion-body"><p>Hans Buyck adviseert u op een professionele manier hoe u meer rendement uit uw woning kunt halen.</p><p>Het plaatsen van dubbel glas is daar zeker een meerwaarde in. Vandaag kunt u nog genieten van premies van de Vlaamse overheid en van de distributienetbeheerder.</p></div>
+    </div>
+</div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="hb_faq_h2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hb_faq_c2" aria-expanded="false" aria-controls="hb_faq_c2">In hoeverre zijn de producten van Hans Buyck geluidswerend?</button>
+    </h2>
+    <div id="hb_faq_c2" class="accordion-collapse collapse" aria-labelledby="hb_faq_h2" data-bs-parent="#hb_faq">
+        <div class="accordion-body"><p>Het buitenschrijnwerk van Hans Buyck werkt isolerend en heeft dus ook een sterk akoestisch effect. Omgevingsgeluiden worden aanzienlijk gedempt.</p></div>
+    </div>
+</div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="hb_faq_h3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hb_faq_c3" aria-expanded="false" aria-controls="hb_faq_c3">Hoe lang duurt het plaatsen van buitenschrijnwerk?</button>
+    </h2>
+    <div id="hb_faq_c3" class="accordion-collapse collapse" aria-labelledby="hb_faq_h3" data-bs-parent="#hb_faq">
+        <div class="accordion-body"><p>Dat hangt af van de opdracht, maar bij nieuwbouwwoningen is het meestal in 1 dag voor elkaar. Bij verbouwingen duurt het hele proces 2 à 5 werkdagen.</p></div>
+    </div>
+</div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="hb_faq_h4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hb_faq_c4" aria-expanded="false" aria-controls="hb_faq_c4">Zijn er premies beschikbaar?</button>
+    </h2>
+    <div id="hb_faq_c4" class="accordion-collapse collapse" aria-labelledby="hb_faq_h4" data-bs-parent="#hb_faq">
+        <div class="accordion-body"><p>Jazeker. De Vlaamse overheid stelt een renovatiepremie beschikbaar voor investeringen tot maximaal € 15.000. Concreet: 40% bij een inkomen &lt; € 28.000 en 30% bij een inkomen &lt; € 56.000. Zie voor meer informatie www.bouwenenwonen.be.</p><p>Daarnaast stelt ook de netbeheerder premies beschikbaar:</p><ul><li>€ 12 per m² bij het vervangen van enkele beglazing, bij een warmtedoorgangscoëfficiënt van maximaal 1,1 W/m²K. Maximum: € 300.</li><li>€ 15 per m² bij het vervangen van enkele en dubbele beglazing, bij een warmtedoorgangscoëfficiënt van maximaal 0,8 W/m²K. Maximum: € 375.</li></ul><p class="small text-muted">Premies kunnen wijzigen – vraag ons naar de actuele bedragen.</p></div>
+    </div>
+</div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="hb_faq_h5">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hb_faq_c5" aria-expanded="false" aria-controls="hb_faq_c5">Wat zijn de gevolgen voor mijn energiefactuur?</button>
+    </h2>
+    <div id="hb_faq_c5" class="accordion-collapse collapse" aria-labelledby="hb_faq_h5" data-bs-parent="#hb_faq">
+        <div class="accordion-body"><p>Die gaat aanzienlijk omlaag. Meer isolatie betekent minder warmteverlies en dus minder stookkosten.</p></div>
+    </div>
+</div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="hb_faq_h6">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hb_faq_c6" aria-expanded="false" aria-controls="hb_faq_c6">Hoe zit het met het onderhoud?</button>
+    </h2>
+    <div id="hb_faq_c6" class="accordion-collapse collapse" aria-labelledby="hb_faq_h6" data-bs-parent="#hb_faq">
+        <div class="accordion-body"><p>Alle producten zijn duurzaam en efficiënt in onderhoud. Schuren en schilderen behoort tot de zeldzaamheden als u kiest voor houten ramen, en is helemaal verleden tijd als u kiest voor PVC of aluminium.</p></div>
+    </div>
+</div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="hb_faq_h7">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hb_faq_c7" aria-expanded="false" aria-controls="hb_faq_c7">Jullie doen ramen en deuren in de regio Kortrijk. Ook in andere regio's?</button>
+    </h2>
+    <div id="hb_faq_c7" class="accordion-collapse collapse" aria-labelledby="hb_faq_h7" data-bs-parent="#hb_faq">
+        <div class="accordion-body"><p>Wij zijn gespecialiseerd in ramen en deuren in de regio Kortrijk, maar ook vanuit andere regio's bent u bij ons van harte welkom.</p><p>Wij leveren ramen en deuren met de glimlach.</p></div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="hb_aside">
+                <div class="hb_aside_card o_cc o_cc5">
+                    <h3 class="h4 text-uppercase text-white">Uw vraag er niet bij?</h3>
+                    <p>Bel ons of stuur een bericht, we antwoorden snel.</p>
+                    <a href="tel:+3256253949" class="btn btn-outline-light w-100 mb-2"><i class="oi oi-filled me-1" data-icon="phone"/> 056 25 39 49</a>
+                    <a href="/contact" class="btn btn-primary w-100">Stel uw vraag</a>
+                </div>
+                <div class="hb_aside_card mt-4 bg-white">
+                    <h3 class="h5 text-uppercase mb-3">Bekijk onze video</h3>
+                    <div class="hb_video o_not_editable"><iframe src="https://www.youtube-nocookie.com/embed/dMczXHaHyUk?rel=0" title="Video Hans Buyck" loading="lazy" allowfullscreen="allowfullscreen"/></div>
+                    <p class="mt-3 mb-0"><a href="/producten" class="hb_arrow_link">Onze producten <i class="oi oi-filled" data-icon="east"/></a></p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_vragen" model="website.page">
+        <field name="name">Vragen</field>
+        <field name="url">/vragen</field>
+        <field name="view_id" ref="view_vragen"/>
+        <field name="is_published" eval="True"/>
+        <field name="track" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+        <field name="website_meta_title">Veelgestelde vragen over ramen en deuren | Hans Buyck Kortrijk</field>
+        <field name="website_meta_description">Plaatsbezoek, premies, geluidsisolatie, plaatsingsduur en onderhoud: antwoorden op uw vragen over ramen en deuren.</field>
+    </record>
+</odoo>

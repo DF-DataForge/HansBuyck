@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Herbruikbare blokken: in de builder terug te vinden onder "Custom" na eerste gebruik. -->
+    <template id="hb_cta_band" name="Hans Buyck: CTA-band">
+<section class="hb_cta s_call_to_action o_cc o_cc1 pt80 pb80" data-snippet="s_call_to_action" data-name="Call to action" style="background-color: var(--hb-yellow);">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+                <h2 class="hb_title_lg mb-3">Klaar voor nieuwe ramen of deuren?</h2>
+                <p class="hb_lead mb-0">Kom langs in onze toonzaal in Kortrijk of vraag een vrijblijvende offerte aan. Wij komen graag ter plaatse voor een correcte prijs.</p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+                <a href="tel:+3256253949" class="hb_cta_phone d-inline-block mb-3"><i class="oi oi-filled me-2" data-icon="phone"/>056 25 39 49</a><br/>
+                <a href="/contact" class="btn btn-dark btn-lg me-2 mb-2">Vrijblijvende offerte</a>
+                <a href="/producten" class="btn btn-outline-dark btn-lg mb-2">Onze producten</a>
+            </div>
+        </div>
+    </div>
+</section>
+    </template>
+</odoo>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="view_legal_disclaimer" name="Disclaimer">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+<section class="o_cc o_cc5 pt96 pb64" data-snippet="s_title" data-name="Titel">
+    <div class="container"><span class="hb_eyebrow text-white">Hans Buyck BVBA</span><h1 class="hb_title_lg text-white mb-0">Disclaimer</h1></div>
+</section>
+<section class="pt64 pb96" data-snippet="s_text_block" data-name="Tekst">
+    <div class="container hb_legal_text" style="max-width: 52rem;">
+<div><div>
+<h3>Gebruik van onze website</h3><div>
+<div>
+<p>
+Door onze website te gebruiken stem je in met onze algemene voorwaarden. Onze algemene voorwaarden bestaan uit deze disclaimer, onze <a href="/privacyverklaring">privacy statement</a> en de verkoopsvoorwaarden. Ze gelden zowel voor jou als gebruiker als voor ons, Hans Buyck BVBA. Zonder voorafgaande schriftelijke toestemming door Hans Buyck BVBA kan geen uitzondering worden gemaakt op deze algemene voorwaarden.
+</p>
+</div>
+</div><h3>Wie is Hans Buyck BVBA?</h3><div>
+<div>
+<p>Onze webpagina www.hansbuyck.be wordt uitgegeven door: <br/><br/>Hans Buyck BVBA<br/>O.L.Vrouwestraat 31<br/>8500 Kortrijk<br/>België<br/><br/>Neem bij vragen of onduidelijkheden gerust contact op via ons <a href="/contact">contactformulier</a>
+</p>
+</div>
+</div><h3>Onze Website</h3><div>
+<div>
+<p>
+Hans Buyck BVBA doet alles binnen zijn mogelijkheden om een vlotte werking, een veilige surfomgeving en een hoge graad van toegankelijkheid voor zijn website te waarborgen. Toch gebeurt het bezoeken van onze site steeds op eigen risico. We kunnen dus niet aansprakelijk worden gesteld voor schade die rechtstreeks of onrechtstreeks geleden wordt door het gebruik van onze site.
+</p>
+<p>
+Hans Buyck BVBA heeft het recht om de toegang tot de site op ieder moment te wijzigen, te onderbreken of te beëindigen zonder voorafgaande waarschuwing.
+</p>
+<p>
+Op regelmatige tijdstippen wordt de inhoud van de website van Hans Buyck BVBA bijgewerkt en geactualiseerd. Toch is het altijd mogelijk dat je onvolledige of verouderde informatie terugvindt op onze website. Rechtstreekse of onrechtstreekse schade die hiervan het gevolg is, valt niet onder onze aansprakelijkheid.
+</p>
+<p>
+Indien onze site content bevat die ingaat tegen de geldende wetgeving, de rechten van anderen schaadt of ongepast is, dan vragen wij dat onze gebruikers dat melden. Zo kunnen we de ongepaste inhoud deels of volledig verwijderen.
+</p>
+<p>
+Prijzen en productinformatie staan aangeduid onder voorbehoud van fouten eigen aan het systeem: programmeerfouten en typefouten kunnen niet als bindend voor een overeenkomst gezien worden door de gebruiker.
+</p>
+<p>
+Op deze website staat informatie die kan gedownload worden (teksten, foto’s ,filmpjes, software, enz.) Het downloaden van deze informatie gebeurt steeds op eigen risico. Hans Buyck BVBA is niet verantwoordelijk voor eventuele schade aan uw computersysteem of voor het verlies van data door het downloaden van deze informatie.
+</p>
+<p>
+Niet alleen Hans Buyck BVBA heeft verantwoordelijkheid over deze website. Ook jij als gebruiker wordt geacht geen gedragingen uit te voeren die nadelig zijn voor de vlotte werking en veilige omgeving van onze site. Daaronder begrijpen we schadelijke programma’s (zoals computervirussen, malware, worms, trojans en dergelijke) en het verdelen van ongevraagde commerciële berichten (zoals junk mail, spamming, spammy content, chain mail en dergelijke) via onze website. Schadeclaims zijn alleen te richten aan de gebruiker die de schade veroorzaakte.
+</p>
+</div>
+</div><h3>Links en verwijzingen naar andere websites</h3><div>
+<div>
+<p>
+Pagina’s van derden waarnaar gelinkt wordt op de site van Hans Buyck BVBA, vallen niet onder onze verantwoordelijkheid. Het gaat hier onder meer om hyperlinks, frames, javascripts.
+</p>
+<p>
+Wij zijn niet verantwoordelijk voor de veilige en correcte werking van de gelinkte websites, noch met de inhoud die op de websites wordt vermeld. We zijn dan ook niet verantwoordelijk voor enige (gevolg)schade veroorzaakt door die websites.
+</p>
+<p>
+De algemene voorwaarden van de gelinkte websites kunnen verschillend zijn en niet dezelfde waarborgen bieden.
+</p>
+</div>
+</div><h3>Intellectuele eigendomsrechten</h3><div>
+<div>
+<p>
+Zowel de inhoud (tekstmateriaal, blogartikels, notities, foto’s, tekeningen, video’s, audiofragmenten, enzovoort) als de technische kant van onze website zijn beschermd door intellectuele eigendomsrechten. Hiervan zijn auteursrecht, softwarerecht en databankenrecht een niet-limitatieve lijst van voorbeelden. Elk geval van schending van onze intellectuele eigendomsrechten zal worden vervolgd.
+</p>
+</div>
+</div><h3>Verwerking en bescherming van persoonsgegevens</h3><div>
+<div>
+<p>
+Om uw vragen en/of bestellingen te kunnen opvolgen, moet Hans Buyck BVBA een aantal persoonsgegevens onvermijdelijk opvragen. Zonder het opgeven van jouw persoonsgegevens kunnen we jammer genoeg geen gevolg geven aan uw vraag.
+</p>
+<p>
+Hans Buyck BVBA verwerkt jouw persoonsgegevens volgens de bepalingen in ons <a href="/privacyverklaring">privacy statement.</a>
+</p>
+</div>
+</div><h3>Algemene bepalingen</h3><div>
+<div>
+<p>
+Onze website kan op ieder willekeurig moment aangepast worden, uitgebreid worden, of stopgezet worden. Hiervoor kan geen tegemoetkoming geëist worden van de bezoeker.
+</p>
+<p>
+Onze algemene voorwaarden hangen volledig samen met de bepalingen in de Belgische Wetgeving. Onenigheden worden voorgelegd aan de hiertoe bevoegde rechtbank.
+</p>
+</div>
+</div>
+</div></div>
+
+    </div>
+</section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_legal_disclaimer" model="website.page">
+        <field name="name">Disclaimer</field>
+        <field name="url">/disclaimer</field>
+        <field name="view_id" ref="view_legal_disclaimer"/>
+        <field name="is_published" eval="True"/>
+        <field name="track" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+        <field name="website_meta_title">Disclaimer | Hans Buyck</field>
+        <field name="website_meta_description">Disclaimer van de website van Hans Buyck BVBA.</field>
+    </record>
+
+    <template id="view_legal_privacy" name="Privacyverklaring">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+<section class="o_cc o_cc5 pt96 pb64" data-snippet="s_title" data-name="Titel">
+    <div class="container"><span class="hb_eyebrow text-white">Hans Buyck BVBA</span><h1 class="hb_title_lg text-white mb-0">Privacyverklaring</h1></div>
+</section>
+<section class="pt64 pb96" data-snippet="s_text_block" data-name="Tekst">
+    <div class="container hb_legal_text" style="max-width: 52rem;">
+<div><div>
+<h3>Omtrent dit privacy statement</h3><div>
+<div>
+<p>
+Wij, Hans Buyck BVBA hechten veel belang aan de bescherming van uw persoonsgegevens en uw privacy. Daarom gebruiken wij uw persoonsgegevens uitsluitend in overeenstemming met de Privacywet en andere relevante wettelijke voorschriften. Met privacywet bedoelen we de wet van 8 december 1992 ter bescherming van de persoonlijke levenssfeer ten opzichte van de verwerking van persoonsgegevens. Iedere verwijzing naar de GDPR is een verwijzing naar de verordening van 27 april 2016 betreffende bescherming van natuurlijke personen in verband met de verwerking van persoonsgegevens, ook wel de General Data Protection Regulation of Algemene Verordening Gegevensbescherming genoemd.
+</p>
+<p>
+Met dit privacy statement wil Hans Buyck BVBA u informeren over hoe uw persoonlijke gegevens worden verwerkt en wat uw rechten hieromtrent zijn. Door gebruik te maken van ons website www.hansbuyck.be verleent u expliciet uw toestemming dat wij uw persoonlijke gegevens mogen verwerken.
+</p>
+<p>
+De mogelijkheid bestaat dat dit privacy statement in de toekomst onderhevig is aan wijzigingen. Wij raden u dan ook aan om op regelmatige basis dit document te raadplegen. Iedere aanzienlijke inhoudelijke wijziging zal ook duidelijk gecommuniceerd worden.
+</p>
+</div>
+</div><h3>Wie verwerkt uw persoonlijke gegevens</h3><div>
+<div>
+<p>
+De website www.hansbuyck.be is eigendom van:
+</p>
+<p>
+Hans Buyck BVBA<br/>O.L.Vrouwestraat 31<br/>8500 Kortrijk<br/>België<br/>
+</p>
+<p>
+<strong>Welke persoonlijke gegevens worden verwerkt:</strong>
+</p>
+<p>
+Wij, Hans Buyck BVBA verbinden ons er toe dat wij enkel de gegevens verwerken die noodzakelijk zijn voor de doeleinden waarvoor ze zijn verzameld. Volgende persoonsgegevens worden verwerkt door Hans Buyck BVBA: Identificatiegegevens:
+</p>
+</div>
+</div><h3>Doeleinden van de verwerking van uw persoonlijke gegevens</h3><div>
+<div>
+<p>
+Hans Buyck BVBA verzamelt persoonlijke gegevens om u een veilige, geoptimaliseerde en gepersonaliseerde gebruikerservaring te bieden. Deze verzameling van persoonlijk gegevens kan worden uitgebreid naarmate u intensiever gebruik maakt van onze dienstverlening.
+</p>
+<p>
+De gegevensverwerking is essentieel voor de werking van deze website en de daarbij horende diensten en/of geleverde producten.
+</p>
+<p>
+Wij verwerken uw gegevens voor volgende doeleinden:
+</p>
+<ul>
+<li>
+Het toegang verschaffen tot uw gebruikersprofiel
+</li>
+<li>
+Het leveren en eventueel de installatie van producten, al dan niet gepersonaliseerd
+</li>
+<li>
+Facturatie en boekhouddoeleinden
+</li>
+<li>
+Aanbieden van informatie
+</li>
+<li>
+Leveren van algemene en persoonlijke dienstverlening
+</li>
+<li>
+Uitsturen van nieuwsbrieven en aanbiedingen die nuttig en/of noodzakelijk kunnen zijn voor u
+</li>
+<li>
+Het verkrijgen en verwerken van gebruikersbeoordelingen
+</li>
+<li>
+Het verlenen van technische ondersteuning, dienst na verkoop
+</li>
+<li>
+Het verbeteren van algemene en persoonlijke dienstverlening
+</li>
+<li>
+Het verbeteren van de aangeleverde producten, al dan niet gepersonaliseerd
+</li>
+<li>
+De detectie en het voorkomen van fraude, fout en of criminele gedragingen
+</li>
+<li>
+Marketing doeleinden
+</li>
+</ul>
+<p>
+Tijdens het bezoek van de website www.hansbuyck.be worden er ook gegevens ingezameld voor statistische doeleinden. Deze gegevens zijn noodzakelijk om het gebruik van onze website te optimaliseren. Het gaat om volgende gegevens:
+</p>
+<ul>
+<li>
+IP-adres
+</li>
+<li>
+Herkomst van het bezoek
+</li>
+<li>
+Vermoedelijke plaats van het websitebezoek
+</li>
+<li>
+Tijdstip van het websitebezoek
+</li>
+<li>
+Duurtijd van het websitebezoek
+</li>
+<li>
+Merk en type van de gebruikte drager (computer, tablet of smartphone) gebruikt bij het websitebezoek
+</li>
+<li>
+Gebruikte browser tijdens het bezoek van de website
+</li>
+</ul>
+<p>
+Wanneer u de website bezoekt gaat u akkoord met deze inzameling van statistische gegevens, zoals hierboven vermeld.
+</p>
+<p>
+De bezoeker verschaft zelf zijn persoonlijke gegevens aan Hans Buyck BVBA en kan daardoor een zekere controle uitoefenen op de inhoud, volledigheid en correctheid van de gegevens. Wanneer mocht blijken dat de gegevens onvolledig of niet correct zijn dan behoudt Hans Buyck BVBA zich het recht voor om bepaalde handelingen tijdelijk of permanent niet uit te voeren.
+</p>
+<p>
+De gegevens worden enkel verwerkt voor intern gebruik door Hans Buyck BVBA. Wij kunnen u verzekeren dat uw persoonlijke gegevens niet worden verkocht, doorgegeven of meegedeeld aan derde partijen die aan ons verbonden zijn, tenzij het gaat om onderaannemers die mee instaan voor de levering van het product of uitvoering van de gevraagde dienst. Deze onderaannemers zullen enkel uw gegevens verwerken voor de doeleinden vermeld in dit privacy statement. Hans Buyck BVBA heeft alle nodige juridische en technische maatregelen genomen om een ongeoorloofde toegang en gebruik van uw persoonlijke gegevens te vermijden.
+</p>
+</div>
+</div><h3>Het gebruik van Cookies</h3><div>
+<div>
+<p>
+Bij het bezoeken van de website www.hansbuyck.be kunnen ‘cookies’ op uw schijf worden opgeslagen om de website beter te kunnen afstemmen op de behoeftes van de terugkerende websitebezoeker.
+</p>
+<p>
+Deze cookies helpen ons om uw bezoek aan de website te optimaliseren en om technische keuzes te onthouden. Wij raden dan ook aan de cookies in te schakelen. Wenst u echter geen gebruik te maken van cookies en deze uit te schakelen dan verwijzen we u naar ons <a href="/cookieverklaring">cookiebeleid.</a>
+</p>
+<p>
+Voor een verdergaande uitleg van de wijze waarop wij cookies gebruiken om uw persoonlijke gegevens te verkrijgen en te verwerken verwijzen we naar ons <a href="/cookieverklaring">cookiebeleid.</a>
+</p>
+</div>
+</div><h3>Uw rechten</h3><div>
+<div>
+<p>
+<strong>Recht op rechtmatige en veilige verwerking van uw persoonsgegevens</strong>
+</p>
+<p>
+Hans Buyck BVBA verwerkt uw persoonsgegevens steeds als een goede huisvader. Dit omvat onder andere het volgende:
+</p>
+<ul>
+<li>
+Uw persoonsgegevens worden verwerkt volgens de gerechtvaardigde doeleinden omschreven in dit privacy statement.
+</li>
+<li>
+Uw persoonsgegevens worden enkel verwerkt voor zover dit noodzakelijk en ter zake is, en bovendien niet overmatig is.
+</li>
+<li>
+Uw persoonsgegevens worden enkel bewaard zolang het nodig is voor het verwezenlijken van doeleinden zoals omschreven in dit privacystatement.
+</li>
+</ul>
+<p>
+We hebben de nodige technische maatregelen genomen om de risico’s op een onrechtmatige toegang tot uw persoonsgegevens, of de verwerking ervan tot een minimum te reduceren. Bij inbraak op haar informaticasystemen zal Hans Buyck BVBA onmiddellijk alle mogelijke maatregelen nemen om de schade tot een minimum te beperken.
+</p>
+<p>
+<strong>Recht op rechtmatige en veilige verwerking van uw persoonsgegevens</strong>
+</p>
+<p>
+Nadat u het bewijs van uw identiteit hebt geleverd, beschikt u over het recht om van Hans Buyck BVBA te vernemen of uw gegevens worden verwerkt. Indien uw gegevens voorkomen in onze bestanden dan hebt u het recht om inzage te verkrijgen in de verzamelde persoonsgegevens. Indien u van uw recht op inzage gebruik wenst te maken, dan zal Hans Buyck BVBA hieraan gevolg geven binnen één maand na het ontvangen van de aanvraag. De aanvraag kan gebeuren ofwel via aangetekende zending ofwel via e-mail naar het adres info@hansbuyck.be
+</p>
+<p>
+Onvolledige of foutieve gegevens kunnen steeds worden gecorrigeerd. Het is aan de bezoeker om in de eerste plaats zelf onvolledige of foutieve gegevens aan te passen. U kan uw recht op verbetering uitvoeren door contact op te nemen met ons. Hans Buyck BVBA zal uw persoonsgegevens aanpassen uiterlijk één (1) maand na uw aanvraag.
+</p>
+<p>
+Bovendien hebt u het recht om uw persoonsgegevens door ons te laten wissen binnen een redelijke termijn. Het “recht om vergeten te worden” kan echter slechts in de volgende gevallen:
+</p>
+<ul>
+<li>
+Wanneer de persoonsgegevens niet langer noodzakelijk zijn voor de doeleinden waarvoor ze oorspronkelijk verzameld werden
+</li>
+<li>
+Wanneer er geen enkele rechtsgrond bestaat voor de verwerking en de persoonsgegevens werden verzameld met toestemming
+</li>
+<li>
+Wanneer u bezwaar maakt tegen de verwerking van uw persoonsgegevens en er geen belangrijkere dwingende gerechtvaardigde gronden bestaan voor het bewaren van uw bestaan. Onder “gerechtvaardigde gronden” wordt onder meer boekhoudkundige en andere wettelijke verplichtingen verstaan.
+</li>
+<li>
+Wanneer de persoonsgegevens onrechtmatig zijn verkregen
+</li>
+<li>
+Wanneer de persoonsgegevens moeten gewist worden overeenkomstig een wettelijke verplichting
+</li>
+</ul>
+<p>
+Hans Buyck BVBA oordeelt zelf of aan 1 van bovenstaande voorwaarden is voldaan.
+</p>
+<p>
+<strong>Recht op bezwaar tegen en het recht op de inperking van de verwerking van uw persoonsgegevens.</strong>
+</p>
+<p>
+U hebt het recht om een beperking van de verwerking van uw persoonsgegevens te bekomen:
+</p>
+<ul>
+<li>
+Tijdens de periode die nodig is voor Hans Buyck BVBA om de juistheid van uw persoonsgegevens te controleren in geval van betwisting
+</li>
+<li>
+Wanneer de persoonsgegevens onrechtmatig verkregen zijn en u verzoekt van deze slechts beperkt te gebruiken in plaats van deze te laten wissen
+</li>
+<li>
+Wanneer de persoonsgegevens van de gebruiker niet meer nodig zijn voor de verwerkingsdoeleinden en de gebruiker de persoonsgegevens nodig heeft voor rechtsvervolging.
+</li>
+<li>
+Tijdens de periode die nodig is voor Hans Buyck BVBA om te verifiëren of aan alle voorwaarden is voldaan om de persoonsgegevens te verwijderen.
+</li>
+</ul>
+<p>
+U hebt ten allen tijde het recht om bezwaar aan te tekenen tegen de verwerking van de persoonsgegevens. Hans Buyck BVBA zal hierna de verwerking van uw persoonsgegevens staken, tenzij Hans Buyck BVBA dwingende gerechtvaardigde gronden kan aantonen voor de verwerking van de persoonsgegevens die voorrang krijgen op het recht van bezwaar.
+</p>
+<p>
+U kan uw recht op bezwaar uitvoeren door contact op te nemen met ons. Hans Buyck BVBA zal uw persoonsgegevens aanpassen uiterlijk één (1) maand na uw aanvraag. De aanvraag kan gebeuren ofwel via aangetekende zending ofwel via e-mail naar het adres info@hansbuyck.be
+</p>
+<p>
+<strong>Recht op gegevensoverdraagbaarheid</strong>
+</p>
+<p>
+U hebt als bezoeker het recht om de persoonsgegevens die u aan Hans Buyck BVBA hebt doorgegeven terug te ontvangen in een gestructureerde door machine leesbaar bestand. Bovendien hebt u het recht om de gegevens over te dragen aan een andere verwerkingsverantwoordelijke indien de verwerking uitsluitend rust op toestemming van de gebruiker.
+</p>
+<p>
+U kan uw recht op overdracht uitvoeren door contact op te nemen met ons. Hans Buyck BVBA zal uw persoonsgegevens aanpassen uiterlijk één (1) maand na uw aanvraag. De aanvraag kan gebeuren ofwel via aangetekende zending ofwel via e-mail naar het adres info@hansbuyck.be
+</p>
+<p>
+<strong>Recht op het intrekken van toestemming van verwerking en het recht om klacht in te dienen</strong>
+</p>
+<p>
+U hebt ten allen tijde het recht om toestemming tot verwerking van uw gegevens in te trekken. Dit verandert echter niets aan de rechtmatigheid tot verwerking op basis van de toestemming vóór de intrekking daarvan.
+</p>
+<p>
+U kan uw recht op bezwaar uitvoeren door contact op te nemen met ons. Hans Buyck BVBA zal uw persoonsgegevens aanpassen uiterlijk één (1) maand na uw aanvraag. De aanvraag kan gebeuren ofwel via aangetekende zending ofwel via e-mail naar het adres info@hansbuyck.be
+</p>
+<p>
+Bovendien hebt u ook het recht om klacht in te dienen betreffende de verwerking van uw persoonsgegevens door Hans Buyck BVBA bij de Belgische Commissie voor de bescherming van de persoonlijke levenssfeer.
+</p>
+</div>
+</div>
+</div></div>
+
+    </div>
+</section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_legal_privacy" model="website.page">
+        <field name="name">Privacyverklaring</field>
+        <field name="url">/privacyverklaring</field>
+        <field name="view_id" ref="view_legal_privacy"/>
+        <field name="is_published" eval="True"/>
+        <field name="track" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+        <field name="website_meta_title">Privacyverklaring | Hans Buyck</field>
+        <field name="website_meta_description">Privacyverklaring van de website van Hans Buyck BVBA.</field>
+    </record>
+
+    <template id="view_legal_cookies" name="Cookieverklaring">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+<section class="o_cc o_cc5 pt96 pb64" data-snippet="s_title" data-name="Titel">
+    <div class="container"><span class="hb_eyebrow text-white">Hans Buyck BVBA</span><h1 class="hb_title_lg text-white mb-0">Cookieverklaring</h1></div>
+</section>
+<section class="pt64 pb96" data-snippet="s_text_block" data-name="Tekst">
+    <div class="container hb_legal_text" style="max-width: 52rem;">
+<div><h3>Cookies</h3><div>
+<p>Een cookie slaat info op in de browser op je computer tijdens je bezoek aan een webpagina. Cookies worden gebruikt om je gebruiksgemak te vergroten, bijvoorbeeld door bij een volgend bezoek aan een website je taalkeuze of login te herinneren. Cookies kunnen ook gebruikt worden voor marketingdoeleinden. Er bestaan diverse soorten cookies: tracking cookies (om uw gedrag op internet te volgen en bij te houden), technische cookies (bijvoorbeeld voor het bijhouden van taalinstellingen) en sessiecookies (tijdelijke cookies die verlopen bij het sluiten van uw browservenster).</p>
+<p>Hans Buyck BVBA is een Belgische website en handelt volgens de Belgische wet omtrent de elektronische communicatie, in dit opzicht volgt Hans Buyck BVBA de bepalingen hierin omschreven omtrent cookies (wet van 13 juni 2005).</p>
+</div><h3>Waarvoor worden cookies gebruikt?</h3><div>
+<p>Als bezoeker van onze website stem je er mee in dat wij cookies gebruiken. Onze cookies zorgen ervoor dat jouw bezoek aan de website vlot en gepersonaliseerd verloopt. Je kan de cookies zelf in- of uitschakelen, maar dan kan je problemen ondervinden bij het surfen op onze site.</p>
+<p>De cookies waar Hans Buyck BVBA gebruik van maakt, zijn ongevaarlijk. We gebruiken ze om ervoor te zorgen dat wat je te zien krijgt, toepasselijk is voor jou als bezoeker en om het surfen makkelijker te maken voor jou door bijvoorbeeld taalinstellingen te onthouden.</p>
+</div><h3>Welke cookies gebruikt Hans Buyck BVBA?</h3><div>
+<p>Enerzijds gebruiken wij sessiecookies die essentieel zijn om onze website te laten werken. Deze kunnen niet worden uitgezet op onze servers.</p>
+<p>Daarnaast gebruiken wij ook cookies die niet-essentieel zijn, maar ervoor zorgen dat de site die je te zien krijgt volledig op jouw maat is. Er zijn drie soorten: functionele cookies, analytische cookies en advertising cookies.</p>
+<p>Naast onze eigen cookies, maken we ook gebruik van cookies van websites van derden waarop we adverteren.</p>
+<p>Hieronder vind je een overzicht van de cookies die door ons gebruikt worden.</p>
+<p>First party cookies</p>
+<p><strong>Domein: www.hansbuyck.be</strong></p>
+<table>
+<thead>
+<tr>
+<th>Naam</th>
+<th>Type</th>
+<th>Geldigheidsduur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PHPSESSID</td>
+<td>Technische cookie voor het bijhouden van sessieinformatie</td>
+<td>Tot het sluiten van de browser</td>
+</tr>
+<tr>
+<td>meldingcookie</td>
+<td>Deze cookie houdt bij of u het cookiebeleid van deze website hebt aanvaard of niet.</td>
+<td>Vervalt 1 jaar na akkoord</td>
+</tr>
+</tbody>
+</table>
+<p>Third party cookies</p>
+<p><strong>Domein: www.hansbuyck.be</strong></p>
+<table>
+<thead>
+<tr>
+<th>Naam</th>
+<th>Type</th>
+<th>Geldigheidsduur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>__utma</td>
+<td>
+<p>Wordt gebruikt om gebruikers en sessies te onderscheiden.</p>
+<p>De cookie wordt aangemaakt wanneer de javascript-bibliotheek wordt uitgevoerd en er geen bestaande __utma-cookies bestaan.</p>
+<p>De cookie wordt telkens bijgewerkt wanneer gegevens naar Google Analytics worden verzonden.</p>
+</td>
+<td>Vervalt 2 jaar na ieder bezoek</td>
+</tr>
+<tr>
+<td>__utmt</td>
+<td>Wordt gebruikt om verzoeksnelheid te vertragen.</td>
+<td>Vervalt na 10 minuten</td>
+</tr>
+<tr>
+<td>__utmb</td>
+<td>
+<p>Wordt gebruikt om nieuwe sessies / bezoeken te bepalen.</p>
+<p>De cookie wordt gemaakt wanneer de javascript-bibliotheek wordt uitgevoerd en er geen bestaande __utmb-cookies bestaan.</p>
+<p>De cookie wordt telkens bijgewerkt wanneer gegevens naar Google Analytics worden verzonden.</p>
+</td>
+<td>Vervalt na 30 minuten na ieder bezoek</td>
+</tr>
+<tr>
+<td>__utmc</td>
+<td>Niet gebruikt in ga.js. Wordt ingesteld voor interoperabiliteit met urchin.js. Historisch gezien werkte dit cookie samen met de __utmb-cookie om te bepalen of de gebruiker deelnam aan een nieuwe sessie / bezoek.</td>
+<td>Einde van de browser sessie</td>
+</tr>
+<tr>
+<td>__utmz</td>
+<td>Slaat de verkeersbron of campagne op die uitlegt hoe de gebruiker de site heeft bereikt. De cookie wordt gemaakt wanneer de javascript-bibliotheek wordt uitgevoerd en wordt bijgewerkt telkens wanneer gegevens naar Google Analytics worden verzonden.</td>
+<td>Vervalt 6 maanden na ieder bezoek</td>
+</tr>
+</tbody>
+</table>
+<p>In onze <a href="#privacyverklaring">privacyverklaring</a> vind je alle informatie over hoe Hans Buyck BVBA jouw persoonsgegevens verwerkt.</p>
+</div><h3>Hoe kan je zelf je cookies instellen?</h3><div>
+<p>Je kan ten allen tijde zelf je cookie-instellingen wijzigen in de instellingen van je webbrowser. Voor elke browser zijn er andere handleidingen, die je via onderstaande links kan raadplegen. Ook via de help-functie van je internetbrowser kan je hier een handleiding voor vinden.</p>
+<p><a href="https://support.mozilla.org/nl/kb/cookies-in-en-uitschakelen-websites-voorkeuren" target="blank">Cookie instellingen in Mozilla Firefox </a></p>
+<p><a href="https://support.microsoft.com/nl-be/help/17442/windows-internet-explorer-delete-manage-cookies" target="blank">Cookie instellingen in Microsoft Internet Explorer</a></p>
+<p><a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&amp;hl=nl" target="blank">Cookie instellingen in Google Chrome</a></p>
+<p><a href="https://support.apple.com/kb/ph21411?locale=nl_NL" target="blank">Cookie instellingen in Safari</a></p>
+<p><a href="http://help.opera.com/Linux/10.10/nl/cookies.html" target="blank">Cookie instellingen in Opera</a></p>
+<p>Je kan de cookies inschakelen of uitschakelen. Voor een optimale gebruikservaring raden wij je echter aan om de cookies in te schakelen.</p>
+</div><h3>Welke rechten heb je als bezoeker van onze website?</h3><div>
+<p>Als bezoeker van onze website heb je het recht op een veilige verwerking van jouw persoonsgegevens, maar verwerf je ook een aantal rechten.</p>
+<p>Je hebt recht op verzet, wat betekent dat je je bij gewichtige en legitieme gronden mag kanten tegen de verwerking van jouw persoonsgegevens.</p>
+<p>Je hebt recht op toegang, wat betekent dat je op simpel verzoek mag opvragen of jouw persoonsgegevens worden bijgehouden en/of verwerkt, en of ze al dan niet worden doorgegeven.</p>
+<p>Je hebt recht op correctie, wat betekent dat je persoonsgegevens op elk moment en op jouw verzoek steeds gecorrigeerd of verwijderd kunnen worden.</p>
+<p>In onze <a href="/privacyverklaring">privacy statement</a> kan je meer lezen over jouw rechten en op welke manier je die kan uitoefenen.</p>
+<p>Bij vragen of opmerkingen over onze cookieverklaring kan je ons contacteren via info@hansbuyck.be.</p>
+</div></div>
+<div/>
+
+    </div>
+</section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_legal_cookies" model="website.page">
+        <field name="name">Cookieverklaring</field>
+        <field name="url">/cookieverklaring</field>
+        <field name="view_id" ref="view_legal_cookies"/>
+        <field name="is_published" eval="True"/>
+        <field name="track" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+        <field name="website_meta_title">Cookieverklaring | Hans Buyck</field>
+        <field name="website_meta_description">Cookieverklaring van de website van Hans Buyck BVBA.</field>
+    </record>
+</odoo>

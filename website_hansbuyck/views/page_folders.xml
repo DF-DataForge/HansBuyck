@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="view_folders" name="Folders">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+
+<section class="hb_page_header oe_img_bg o_bg_img_center o_cc o_cc5 pt128 pb96 " data-snippet="s_cover" data-name="Pagina-header" style="background-image: url('/website_hansbuyck/static/src/img/prod_ramen_29.webp');">
+    <div class="o_we_bg_filter"/>
+    <div class="container">
+        <nav aria-label="breadcrumb"><ol class="breadcrumb mb-4"><li class="breadcrumb-item"><a href="/">Home</a></li></ol></nav>
+        <span class="hb_eyebrow text-white">Folders</span>
+        <h1 class="text-white">Onze folders</h1>
+        <p class="hb_lead text-white-75 mb-0 mt-3" style="max-width: 44rem;">Ontdek onze folders met de laatste technieken in ramen en deuren. Meer gedetailleerde info en prijsramingen krijgt u in onze toonzaal in Kortrijk.</p>
+    </div>
+</section>
+<section class="pt48 pb0" data-snippet="s_text_block" data-name="Filter">
+    <div class="container"><a href="#folders-aluminium" class="btn btn-outline-dark me-2 mb-2">Aluminium</a><a href="#folders-pvc" class="btn btn-outline-dark me-2 mb-2">PVC</a><a href="#folders-hout" class="btn btn-outline-dark me-2 mb-2">Hout</a><a href="#folders-houtaluminium" class="btn btn-outline-dark me-2 mb-2">Hout-aluminium</a><a href="#folders-algemeen" class="btn btn-outline-dark me-2 mb-2">Algemeen</a></div>
+</section>
+<div style="background-color: var(--hb-light);" class="pb64">
+<section id="folders-aluminium" class="pt48 pb48" data-snippet="s_three_columns" data-name="Folders Aluminium">
+    <div class="container">
+        <h2 class="hb_title_lg mb-4">Aluminium</h2>
+        <div class="row g-4">
+<div class="col-md-6 col-lg-4">
+    <div class="hb_folder">
+        <div class="hb_folder_img"><img src="/website_hansbuyck/static/src/img/folder_02.webp" alt="ELITH – alu raamsysteem" loading="lazy"/><span class="hb_folder_badge">ALU</span></div>
+        <div class="hb_folder_body">
+            <h3>ELITH – alu raamsysteem</h3>
+            <p>(rekening houdend met de inbouwdiepte). Uitzonderlijk slank design met kleine vleugelhoogte. 48000 kleurcombinaties + 16 standaard. Inbouwdiepte 88 mm. Stegen ABS 49 mm kader / 40 mm vleugel. 3 dichtingen waarvan 1 centrale middendichting in vleugel. Veiligheidsbeslag 130 kg verdoken met gebrevetteerde regelbare sluitingen + 2,5 mm / - 2,5 mm. Levensduur gegarandeerd door 3 hoekverbindingen en 8 persinkepingen per hoek</p>
+            <a href="/website_hansbuyck/static/pdf/ALU_ELITH_NL.pdf" target="_blank" class="btn btn-primary align-self-start"><i class="oi oi-filled me-1" data-icon="download"/> Download PDF <small class="opacity-75 ms-1">(1.2 MB)</small></a>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4">
+    <div class="hb_folder">
+        <div class="hb_folder_img"><img src="/website_hansbuyck/static/src/img/folder_03.webp" alt="MOVITH – alu portefeuille schuifraam" loading="lazy"/><span class="hb_folder_badge">ALU</span></div>
+        <div class="hb_folder_body">
+            <h3>MOVITH – alu portefeuille schuifraam</h3>
+            <p>Portefeuille systeem 88 mm met vleugel 44 mm. Stegen polyamide 49 mm kader / 40 mm vleugel. Vleugelgewicht tot 150 kg met regelbare wielen. Veiligheidsbeslag 4 punten steeds standaard voorzien ). Maximale glasafmetingen0 Verdoken afwatering. Leverbaar in 48.000 kleurcombinaties. + 16 standaard combinaties. Discrete dichtingen.</p>
+            <a href="/website_hansbuyck/static/pdf/ALU_MOVITH_NL.pdf" target="_blank" class="btn btn-primary align-self-start"><i class="oi oi-filled me-1" data-icon="download"/> Download PDF <small class="opacity-75 ms-1">(1.2 MB)</small></a>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4">
+    <div class="hb_folder">
+        <div class="hb_folder_img"><img src="/website_hansbuyck/static/src/img/folder_04.webp" alt="SUMITH – alu hefschuifraam" loading="lazy"/><span class="hb_folder_badge">ALU</span></div>
+        <div class="hb_folder_body">
+            <h3>SUMITH – alu hefschuifraam</h3>
+            <p>Hefschuifsysteem 173 mm met vleugel 88 mm. Stegen polyamide 66 mm kader / 40 mm vleugel. Vleugelgewicht tot 300 kg met vleugelrem. Voor alle schuivende delen van meer dan 150 kg. Veiligheidsbeslag met 4 sluitingen+3 dichtingen Soft Move. Maximale afmetingen : 6000 mm x 2650 mm. Uitgepuurd design + Verdoken afwatering. Dorpel met inbouwmogelijkheid (PBM oplossing). Leverbaar in 48.000 kleurcombinaties. +16 standaard combinaties.</p>
+            <a href="/website_hansbuyck/static/pdf/ALU_SUMITH_NL.pdf" target="_blank" class="btn btn-primary align-self-start"><i class="oi oi-filled me-1" data-icon="download"/> Download PDF <small class="opacity-75 ms-1">(1.2 MB)</small></a>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4">
+    <div class="hb_folder">
+        <div class="hb_folder_img"><img src="/website_hansbuyck/static/src/img/folder_05.webp" alt="ZENITH – alu deursysteem" loading="lazy"/><span class="hb_folder_badge">ALU</span></div>
+        <div class="hb_folder_body">
+            <h3>ZENITH – alu deursysteem</h3>
+            <p>Inbouwdiepte 88 mm met stegen ABS. 49 mm kader / 40 mm vleugel. Dichtheid gelijk aan deze van een raam. Veiligheidsbeslag 5 punten waarvan 2 haken. 3D regelbare fijne scharnieren. Met 8 persinkepingen per hoek. Uitgepuurd design + discrete dichtingen. Keuze onder meer dan 60 modellen. Mogelijke kleurcombinaties: 48.000 waarvan 16 standaard combinaties</p>
+            <a href="/website_hansbuyck/static/pdf/ALU_ZENITH_NL.pdf" target="_blank" class="btn btn-primary align-self-start"><i class="oi oi-filled me-1" data-icon="download"/> Download PDF <small class="opacity-75 ms-1">(1.2 MB)</small></a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+<section id="folders-pvc" class="pt48 pb48" data-snippet="s_three_columns" data-name="Folders PVC">
+    <div class="container">
+        <h2 class="hb_title_lg mb-4">PVC</h2>
+        <div class="row g-4">
+<div class="col-md-6 col-lg-4">
+    <div class="hb_folder">
+        <div class="hb_folder_img"><div class="hb_folder_placeholder">PVC</div><span class="hb_folder_badge">PVC</span></div>
+        <div class="hb_folder_body">
+            <h3>ELITH – PVC raamsysteem</h3>
+            <p>Inbouwdiepte 88 mm. 7 kamer waaronder een ruime in het midden voorzien voor een bijkomende isolatie. 3 dichtingen waarvan 1 centrale middendichting in vleugel. Block &amp; Safe Technology : verlijmde beglazing. Veiligheidsbeslag 130 kg (verdoken in optie) met gebrevetteerde regelbare sluitingen + 2,5 mm / - 2,5 mm. Trendy uitzicht met maximale glasafmeting. Innovatieve hoekafwerking + verdoken afwatering. Leverbaar in 120 kleurcombinaties.</p>
+            <a href="/website_hansbuyck/static/pdf/PVC_ELITE_NL.pdf" target="_blank" class="btn btn-primary align-self-start"><i class="oi oi-filled me-1" data-icon="download"/> Download PDF <small class="opacity-75 ms-1">(1.2 MB)</small></a>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4">
+    <div class="hb_folder">
+        <div class="hb_folder_img"><div class="hb_folder_placeholder">PVC</div><span class="hb_folder_badge">PVC</span></div>
+        <div class="hb_folder_body">
+            <h3>SUMITH – PVC hefschuifraam</h3>
+            <p>Hefschuifsysteem 180 mm met vleugel 88 mm. 3 dichtingen Soft Move. Vleugelgewicht tot 300 kg met vleugelrem voor alle schuivende delen van meer dan 150 kg. Veiligheidsbeslag met 4 sluitingen. Maximale afmetingen : 6000 mm x 2500 mm. Trendy uitzicht. Innovatieve hoekafwerking. Verdoken afwatering. Leverbaar in 120 kleurcombinaties. Korte levertermijnen. Met aangepaste kleur voor dichting. Dorpel met inbouw mogelijkheid.</p>
+            <a href="/website_hansbuyck/static/pdf/PVC_SUMITH_NL.pdf" target="_blank" class="btn btn-primary align-self-start"><i class="oi oi-filled me-1" data-icon="download"/> Download PDF <small class="opacity-75 ms-1">(1.2 MB)</small></a>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4">
+    <div class="hb_folder">
+        <div class="hb_folder_img"><div class="hb_folder_placeholder">PVC</div><span class="hb_folder_badge">PVC</span></div>
+        <div class="hb_folder_body">
+            <h3>ZENITH – PVC deursysteem</h3>
+            <p>Inbouwdiepte 88 mm - 5 kamer. Dichtheid gelijk aan deze van een raam. Veiligheidsbeslag 5 punten waarvan 2 haken. 3D regelbare fijne scharnieren 130 kg. Specifieke profielen en versterkingen. Innovatieve hoekafwerking. Keuze onder meer dan 80 modellen. Leverbaar in 120 kleurcombinaties. Met aangepaste kleur voor dichting. Verborgen dichting in glaslat.</p>
+            <a href="/website_hansbuyck/static/pdf/PVC_ZENITH_NL.pdf" target="_blank" class="btn btn-primary align-self-start"><i class="oi oi-filled me-1" data-icon="download"/> Download PDF <small class="opacity-75 ms-1">(1.2 MB)</small></a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+<section id="folders-hout" class="pt48 pb48" data-snippet="s_three_columns" data-name="Folders Hout">
+    <div class="container">
+        <h2 class="hb_title_lg mb-4">Hout</h2>
+        <div class="row g-4">
+<div class="col-md-6 col-lg-4">
+    <div class="hb_folder">
+        <div class="hb_folder_img"><img src="/website_hansbuyck/static/src/img/folder_09.webp" alt="DUESY – houten ramen en deuren" loading="lazy"/><span class="hb_folder_badge">HOUT</span></div>
+        <div class="hb_folder_body">
+            <h3>DUESY – houten ramen en deuren</h3>
+            <p>Hier vindt u enkele voorbeelden van wat onze ateliers kunnen fabriceren. Maar de mogelijkheden zijn eindeloos. Ze beginnen waar dromen eindigen. Geen enkele hinderpaal houdt ons tegen. Ons atelier is een industrieel atelier waar bedreven vaklui hun ambacht beoefenen. Als u in de omgeving van een historisch monument woont, moet u renoveren volgens de adviezen van de architecten die voor het monument in kwestie verantwoordelijk zijn. Voor onze ateliers is alles mogelijk</p>
+            <a href="/website_hansbuyck/static/pdf/bois-duesy-nl.pdf" target="_blank" class="btn btn-primary align-self-start"><i class="oi oi-filled me-1" data-icon="download"/> Download PDF <small class="opacity-75 ms-1">(0.2 MB)</small></a>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4">
+    <div class="hb_folder">
+        <div class="hb_folder_img"><img src="/website_hansbuyck/static/src/img/folder_10.webp" alt="ROLLY – houten schuiframen" loading="lazy"/><span class="hb_folder_badge">HOUT</span></div>
+        <div class="hb_folder_body">
+            <h3>ROLLY – houten schuiframen</h3>
+            <p>Ontdek alle mogelijkheden, afwerkingen en technische eigenschappen in de folder.</p>
+            <a href="/website_hansbuyck/static/pdf/bois-rolly-nl.pdf" target="_blank" class="btn btn-primary align-self-start"><i class="oi oi-filled me-1" data-icon="download"/> Download PDF <small class="opacity-75 ms-1">(0.2 MB)</small></a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+<section id="folders-houtaluminium" class="pt48 pb48" data-snippet="s_three_columns" data-name="Folders Hout-aluminium">
+    <div class="container">
+        <h2 class="hb_title_lg mb-4">Hout-aluminium</h2>
+        <div class="row g-4">
+<div class="col-md-6 col-lg-4">
+    <div class="hb_folder">
+        <div class="hb_folder_img"><img src="/website_hansbuyck/static/src/img/folder_11.webp" alt="DUESY – ramen en deuren in hout-aluminium" loading="lazy"/><span class="hb_folder_badge">HOUT/ALU</span></div>
+        <div class="hb_folder_body">
+            <h3>DUESY – ramen en deuren in hout-aluminium</h3>
+            <p>Aluminium en hout zijn materialen met zeer verschillende eigenschappen. Het is dus een zeer complexe en technische opdracht om ze samen te voegen. Voor beide materialen moet rekening worden gehouden met hun eigenheden en beperkingen. Om lang mee te gaan, zonder onderhoud, moet hout ademen en waterdamp doorlaten. De productie van kaders van hout-alu lijkt dan wel zeer complex, maar ze maken elk type gebouw mogelijk.</p>
+            <a href="/website_hansbuyck/static/pdf/mixte-duesy-nl.pdf" target="_blank" class="btn btn-primary align-self-start"><i class="oi oi-filled me-1" data-icon="download"/> Download PDF <small class="opacity-75 ms-1">(0.2 MB)</small></a>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4">
+    <div class="hb_folder">
+        <div class="hb_folder_img"><img src="/website_hansbuyck/static/src/img/folder_12.webp" alt="QUESTY – ramen en deuren in hout-aluminium" loading="lazy"/><span class="hb_folder_badge">HOUT/ALU</span></div>
+        <div class="hb_folder_body">
+            <h3>QUESTY – ramen en deuren in hout-aluminium</h3>
+            <p>Aluminium en hout zijn materialen met zeer verschillende eigenschappen. Het is dus een zeer complexe en technische opdracht om ze samen te voegen. Voor beide materialen moet rekening worden gehouden met hun eigenheden en beperkingen. Om lang mee te gaan, zonder onderhoud, moet hout ademen en waterdamp doorlaten. De productie van kaders van hout-alu lijkt dan wel zeer complex, maar ze maken elk type gebouw mogelijk.</p>
+            <a href="/website_hansbuyck/static/pdf/mixte-questy-nl.pdf" target="_blank" class="btn btn-primary align-self-start"><i class="oi oi-filled me-1" data-icon="download"/> Download PDF <small class="opacity-75 ms-1">(0.2 MB)</small></a>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4">
+    <div class="hb_folder">
+        <div class="hb_folder_img"><img src="/website_hansbuyck/static/src/img/folder_13.webp" alt="ROLLY – schuiframen in hout-aluminium" loading="lazy"/><span class="hb_folder_badge">HOUT/ALU</span></div>
+        <div class="hb_folder_body">
+            <h3>ROLLY – schuiframen in hout-aluminium</h3>
+            <p>Aluminium en hout zijn materialen met zeer verschillende eigenschappen. Het is dus een zeer complexe en technische opdracht om ze samen te voegen. Voor beide materialen moet rekening worden gehouden met hun eigenheden en beperkingen. Om lang mee te gaan, zonder onderhoud, moet hout ademen en waterdamp doorlaten. De productie van kaders van hout-alu lijkt dan wel zeer complex, maar ze maken elk type gebouw mogelijk.</p>
+            <a href="/website_hansbuyck/static/pdf/mixte-rolly-nl.pdf" target="_blank" class="btn btn-primary align-self-start"><i class="oi oi-filled me-1" data-icon="download"/> Download PDF <small class="opacity-75 ms-1">(0.2 MB)</small></a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+<section id="folders-algemeen" class="pt48 pb48" data-snippet="s_three_columns" data-name="Folders Algemeen">
+    <div class="container">
+        <h2 class="hb_title_lg mb-4">Algemeen</h2>
+        <div class="row g-4">
+<div class="col-md-6 col-lg-4">
+    <div class="hb_folder">
+        <div class="hb_folder_img"><img src="/website_hansbuyck/static/src/img/folder_01.webp" alt="Download onze profielen" loading="lazy"/><span class="hb_folder_badge">Hans Buyck</span></div>
+        <div class="hb_folder_body">
+            <h3>Download onze profielen</h3>
+            <p>Deze folder geeft een compilatie weer van de produkten die we in ons aanbod hebben. Meer gedetailleerde info vindt u op de fiches per produkt, hieronder. Uiteraard kan u steeds terecht in onze showroom te Kortrijk, voor advies en info en prijsramingen.</p>
+            <a href="/website_hansbuyck/static/pdf/HANSBUYCKFOLDER2011.pdf" target="_blank" class="btn btn-primary align-self-start"><i class="oi oi-filled me-1" data-icon="download"/> Download PDF <small class="opacity-75 ms-1">(0.7 MB)</small></a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+</div>
+
+<section class="hb_cta s_call_to_action o_cc o_cc1 pt80 pb80" data-snippet="s_call_to_action" data-name="Call to action" style="background-color: var(--hb-yellow);">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+                <h2 class="hb_title_lg mb-3">Klaar voor nieuwe ramen of deuren?</h2>
+                <p class="hb_lead mb-0">Kom langs in onze toonzaal in Kortrijk of vraag een vrijblijvende offerte aan. Wij komen graag ter plaatse voor een correcte prijs.</p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+                <a href="tel:+3256253949" class="hb_cta_phone d-inline-block mb-3"><i class="oi oi-filled me-2" data-icon="phone"/>056 25 39 49</a><br/>
+                <a href="/contact" class="btn btn-dark btn-lg me-2 mb-2">Vrijblijvende offerte</a>
+                <a href="/producten" class="btn btn-outline-dark btn-lg mb-2">Onze producten</a>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_folders" model="website.page">
+        <field name="name">Folders</field>
+        <field name="url">/folders</field>
+        <field name="view_id" ref="view_folders"/>
+        <field name="is_published" eval="True"/>
+        <field name="track" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+        <field name="website_meta_title">Folders ramen en deuren (PDF) | Hans Buyck Kortrijk</field>
+        <field name="website_meta_description">Download de folders van onze raam-, schuifraam- en deursystemen: ELITH, MOVITH, SUMITH, ZENITH, DUESY, ROLLY en QUESTY.</field>
+    </record>
+</odoo>

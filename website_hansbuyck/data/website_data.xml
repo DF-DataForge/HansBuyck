@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="base.default_website" model="website">
+        <field name="name">Hans Buyck – ramen en deuren Kortrijk</field>
+        <field name="logo" type="bytes" file="website_hansbuyck/static/src/img/logo.png"/>
+        <field name="favicon" type="bytes" file="website_hansbuyck/static/src/img/favicon.ico"/>
+        <field name="cookies_bar" eval="True"/>
+        <field name="cookie_policy_id" ref="page_legal_cookies"/>
+    </record>
+
+    <!-- Homepage SEO -->
+    <record id="website.homepage_page" model="website.page">
+        <field name="website_meta_title">Ramen en deuren Kortrijk | Hans Buyck BVBA</field>
+        <field name="website_meta_description">Ramen en deuren Hans Buyck BVBA uit Kortrijk: verkoop en plaatsing van ramen en deuren, veranda's en lichtstraten in PVC, aluminium en hout. Toonzaal in Kortrijk.</field>
+        <field name="website_meta_keywords">ramen, deuren, glaswerk, glaswerken, veranda, Kortrijk</field>
+    </record>
+</odoo>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="view_contact" name="Contact">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+
+<section class="hb_page_header oe_img_bg o_bg_img_center o_cc o_cc5 pt128 pb96 " data-snippet="s_cover" data-name="Pagina-header" style="background-image: url('/website_hansbuyck/static/src/img/contact.webp');">
+    <div class="o_we_bg_filter"/>
+    <div class="container">
+        <nav aria-label="breadcrumb"><ol class="breadcrumb mb-4"><li class="breadcrumb-item"><a href="/">Home</a></li></ol></nav>
+        <span class="hb_eyebrow text-white">Contact</span>
+        <h1 class="text-white">Contacteer Hans Buyck</h1>
+        <p class="hb_lead text-white-75 mb-0 mt-3" style="max-width: 44rem;">Specialist in ramen en deuren. Stel uw vraag, vraag een vrijblijvende offerte of plan een bezoek aan onze toonzaal.</p>
+    </div>
+</section>
+<section class="pt80 pb80" data-snippet="s_website_form_info" data-name="Contactformulier" style="background-color: var(--hb-light);">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="hb_form_card">
+                    <h2 class="h2 text-uppercase mb-1">Stuur ons een bericht</h2>
+                    <p class="text-muted mb-4">Velden met een * zijn verplicht. We antwoorden zo snel mogelijk.</p>
+                    <section class="s_website_form" data-vcss="001" data-snippet="s_website_form" data-name="Form">
+                        <form id="hb_contact_form" action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-model_name="crm.lead" data-success-mode="redirect" data-success-page="/contact-bedankt" data-pre-fill="true">
+                            <div class="s_website_form_rows row s_col_no_bgcolor">
+<div class="s_website_form_field mb-3 col-lg-6 s_website_form_required" data-type="char" data-name="Field">
+    <label class="s_website_form_label" for="hb_c_name"><span class="s_website_form_label_content">Voornaam en naam</span><span class="s_website_form_mark"> *</span></label>
+    <input id="hb_c_name" type="text" class="form-control s_website_form_input" name="contact_name" placeholder="Jan Peeters" required=""/>
+</div>
+<div class="s_website_form_field mb-3 col-lg-6" data-type="char" data-name="Field">
+    <label class="s_website_form_label" for="hb_c_phone"><span class="s_website_form_label_content">Telefoonnummer</span></label>
+    <input id="hb_c_phone" type="tel" class="form-control s_website_form_input" name="phone" placeholder="056 25 39 49"/>
+</div>
+<div class="s_website_form_field mb-3 col-lg-6 s_website_form_required" data-type="email" data-name="Field">
+    <label class="s_website_form_label" for="hb_c_email"><span class="s_website_form_label_content">E-mail</span><span class="s_website_form_mark"> *</span></label>
+    <input id="hb_c_email" type="email" class="form-control s_website_form_input" name="email_from" placeholder="naam@voorbeeld.be" required=""/>
+</div>
+<div class="s_website_form_field mb-3 col-lg-6 s_website_form_custom" data-type="char" data-name="Field">
+    <label class="s_website_form_label" for="hb_c_interest"><span class="s_website_form_label_content">Interesse in</span></label>
+    <select id="hb_c_interest" class="form-select s_website_form_input" name="Interesse in"><option value="">Maak een keuze…</option><option value="Ramen">Ramen</option><option value="Deuren">Deuren</option><option value="Tuinkamers">Tuinkamers</option><option value="Lichtstraten">Lichtstraten</option><option value="Veranda's">Veranda's</option><option value="Glaswerken">Glaswerken</option><option value="Rolluiken / screens">Rolluiken / screens</option><option value="Andere">Andere</option></select>
+</div>
+<div class="s_website_form_field mb-3 col-12 s_website_form_custom" data-type="char" data-name="Field">
+    <label class="s_website_form_label" for="hb_c_street"><span class="s_website_form_label_content">Adres</span></label>
+    <input id="hb_c_street" type="text" class="form-control s_website_form_input" name="Adres" placeholder="Straat en huisnummer"/>
+</div>
+<div class="s_website_form_field mb-3 col-lg-4 s_website_form_custom" data-type="char" data-name="Field">
+    <label class="s_website_form_label" for="hb_c_zip"><span class="s_website_form_label_content">Postcode</span></label>
+    <input id="hb_c_zip" type="text" class="form-control s_website_form_input" name="Postcode" placeholder="8500"/>
+</div>
+<div class="s_website_form_field mb-3 col-lg-8 s_website_form_custom" data-type="char" data-name="Field">
+    <label class="s_website_form_label" for="hb_c_city"><span class="s_website_form_label_content">Gemeente</span></label>
+    <input id="hb_c_city" type="text" class="form-control s_website_form_input" name="Gemeente" placeholder="Kortrijk"/>
+</div>
+<div class="s_website_form_field mb-3 col-12 s_website_form_required s_website_form_model_required" data-type="char" data-name="Field">
+    <label class="s_website_form_label" for="hb_c_subject"><span class="s_website_form_label_content">Onderwerp</span><span class="s_website_form_mark"> *</span></label>
+    <input id="hb_c_subject" type="text" class="form-control s_website_form_input" name="name" placeholder="Bv. offerte nieuwe ramen" required=""/>
+</div>
+<div class="s_website_form_field mb-3 col-12 s_website_form_required" data-type="text" data-name="Field">
+    <label class="s_website_form_label" for="hb_c_question"><span class="s_website_form_label_content">Uw vraag</span><span class="s_website_form_mark"> *</span></label>
+    <textarea id="hb_c_question" class="form-control s_website_form_input" name="description" rows="6" required="" placeholder="Vertel ons kort over uw project…"></textarea>
+</div>
+<div class="s_website_form_field mb-3 col-12 s_website_form_custom s_website_form_required" data-type="boolean" data-name="Field">
+    <div class="form-check">
+        <input id="hb_c_privacy" type="checkbox" class="form-check-input s_website_form_input" name="Akkoord privacyverklaring" value="Ja" required=""/>
+        <label class="form-check-label s_website_form_check_label" for="hb_c_privacy">Ik ga akkoord met de <a href="/privacyverklaring" target="_blank">privacyverklaring</a><span class="s_website_form_mark"> *</span></label>
+    </div>
+</div>
+<div class="mb-0 py-2 col-12 s_website_form_submit s_website_form_no_submit_label" data-name="Submit Button">
+    <div class="s_website_form_label"/>
+    <span id="s_website_form_result"></span>
+    <a href="#" role="button" class="btn btn-primary btn-lg s_website_form_send">Verzenden</a>
+</div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="hb_contact_card o_cc o_cc5">
+                    <img src="/website_hansbuyck/static/src/img/contact.webp" alt="Toonzaal Hans Buyck" class="img-fluid w-100" style="aspect-ratio: 16/9; object-fit: cover;"/>
+                    <div class="p-4 p-lg-5">
+                        <h2 class="h3 text-uppercase text-white mb-3">Hans Buyck BVBA</h2>
+                        <ul class="hb_contact_list">
+                            <li><i class="oi oi-filled" data-icon="location_on"/><div>O.L.Vrouwestraat 31<br/>8500 Kortrijk</div></li>
+                            <li><i class="oi oi-filled" data-icon="phone"/><a href="tel:+3256253949">Tel: 056 25 39 49</a></li>
+                            <li><i class="oi oi-filled" data-icon="mail"/><a href="mailto:info@hansbuyck.be">info@hansbuyck.be</a></li>
+                            <li><i class="oi oi-filled" data-icon="receipt_long"/><div>BTW: BE0455.307.913</div></li>
+                        </ul>
+                        <hr class="my-4 opacity-25"/>
+                        <h3 class="h5 text-uppercase text-white mb-3">Openingsuren toonzaal</h3>
+                        <ul class="hb_contact_list"><li><i class="oi oi-filled" data-icon="schedule"/><div><strong>Maandag – vrijdag</strong><br/>9u – 12u &amp; 13u30 – 17u</div></li><li><i class="oi oi-filled" data-icon="schedule"/><div><strong>Zaterdag</strong><br/>10u – 12u</div></li><li><i class="oi oi-filled" data-icon="schedule"/><div><strong>Of na afspraak</strong><br/>ook buiten de openingsuren</div></li></ul>
+                        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=O.L.Vrouwestraat+31+8500+Kortrijk" target="_blank" rel="noopener" class="btn btn-primary w-100 mt-3"><i class="oi oi-filled me-1" data-icon="near_me"/> Routebeschrijving</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hb_map p-0" data-name="Kaart">
+    <div class="s_map" data-snippet="s_map" data-name="Map" data-map-type="m" data-map-zoom="15" data-map-address="O.L.Vrouwestraat 31, 8500 Kortrijk, België" data-vxml="001" style="--GoogleMap-height: 420px;">
+        <div class="map_container o_not_editable">
+            <iframe t-if="not test_mode_enabled" class="s_map_embedded o_not_editable" src="https://maps.google.com/maps?q=O.L.Vrouwestraat%2031%2C%208500%20Kortrijk%2C%20Belgi%C3%AB&amp;t=m&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" aria-label="Kaart Hans Buyck" loading="lazy"/>
+            <div class="s_map_color_filter"/>
+        </div>
+    </div>
+</section>
+            </div>
+        </t>
+    </template>
+
+    <record id="page_contact" model="website.page">
+        <field name="name">Contact</field>
+        <field name="url">/contact</field>
+        <field name="view_id" ref="view_contact"/>
+        <field name="is_published" eval="True"/>
+        <field name="track" eval="True"/>
+        <field name="website_indexed" eval="True"/>
+        <field name="website_meta_title">Contact | Hans Buyck ramen en deuren Kortrijk</field>
+        <field name="website_meta_description">Contacteer Hans Buyck, specialist in ramen en deuren in Kortrijk: O.L.Vrouwestraat 31, tel. 056 25 39 49, info@hansbuyck.be.</field>
+    </record>
+
+
+    <template id="view_contact_bedankt" name="Contact – bedankt">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure">
+<section class="pt128 pb128 text-center" data-snippet="s_title" data-name="Bedankt">
+    <div class="container" style="max-width: 46rem;">
+        <i class="oi oi-filled d-inline-block mb-4" data-icon="check_circle" style="font-size: 4rem; color: var(--hb-yellow);"/>
+        <h1 class="hb_title_lg">Bedankt voor uw bericht!</h1>
+        <p class="hb_lead">We hebben uw vraag goed ontvangen en nemen zo snel mogelijk contact met u op. Dringend? Bel ons op <a href="tel:+3256253949">056 25 39 49</a>.</p>
+        <p class="mt-4"><a href="/" class="btn btn-primary btn-lg me-2">Terug naar home</a><a href="/producten" class="btn btn-outline-dark btn-lg">Onze producten</a></p>
+    </div>
+</section>
+            </div>
+        </t>
+    </template>
+    <record id="page_contact_bedankt" model="website.page">
+        <field name="name">Contact – bedankt</field>
+        <field name="url">/contact-bedankt</field>
+        <field name="view_id" ref="view_contact_bedankt"/>
+        <field name="is_published" eval="True"/>
+        <field name="website_indexed" eval="False"/>
+    </record>
+</odoo>

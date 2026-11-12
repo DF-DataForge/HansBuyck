@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="base.main_company" model="res.company">
+        <field name="name">Hans Buyck BVBA</field>
+        <field name="street">O.L.Vrouwestraat 31</field>
+        <field name="zip">8500</field>
+        <field name="city">Kortrijk</field>
+        <field name="country_id" ref="base.be"/>
+        <field name="phone">+32 56 25 39 49</field>
+        <field name="email">info@hansbuyck.be</field>
+        <field name="website">https://www.hansbuyck.be</field>
+        <field name="social_facebook">https://www.facebook.com/Hans-Buyck-BVBA-309438772835193/</field>
+        <field name="social_youtube">https://www.youtube.com/watch?v=dMczXHaHyUk</field>
+        <field name="logo" type="bytes" file="website_hansbuyck/static/src/img/logo.png"/>
+    </record>
+</odoo>

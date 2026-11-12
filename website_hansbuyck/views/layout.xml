@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Top bar met contactgegevens boven de header -->
+    <template id="hb_topbar" inherit_id="website.layout" name="Hans Buyck: top bar">
+        <xpath expr="//header" position="before">
+            <div class="hb_topbar d-none d-md-block" t-if="not no_header">
+                <div class="container d-flex justify-content-between align-items-center py-2 gap-3">
+                    <div class="d-flex gap-4">
+                        <span><i class="oi oi-filled me-1" data-icon="location_on"/>O.L.Vrouwestraat 31, 8500 Kortrijk</span>
+                        <span><i class="oi oi-filled me-1" data-icon="schedule"/>Open iedere dag of na afspraak</span>
+                    </div>
+                    <div class="d-flex gap-4">
+                        <a href="tel:+3256253949"><i class="oi oi-filled me-1" data-icon="phone"/>056 25 39 49</a>
+                        <a href="mailto:info@hansbuyck.be"><i class="oi oi-filled me-1" data-icon="mail"/>info@hansbuyck.be</a>
+                        <a href="https://www.facebook.com/Hans-Buyck-BVBA-309438772835193/" target="_blank" rel="noopener" aria-label="Facebook"><i class="oi" data-icon="oi_facebook"/></a>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Call-to-action knop in de header -->
+    <template id="hb_header_cta" inherit_id="website.header_call_to_action" name="Hans Buyck: header CTA">
+        <xpath expr="//a[hasclass('btn_cta')]" position="replace">
+            <a href="/contact" class="oe_unremovable btn btn-primary btn_cta">Vrijblijvende offerte</a>
+        </xpath>
+    </template>
+
+    <!-- Header opkuisen: telefoon/e-mail staan al in de top bar -->
+    <record id="website.header_text_element" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="website.header_search_box" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="portal.user_sign_in" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+
+    <!-- Sticky header -->
+    <record id="website.header_visibility_standard" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="website.header_visibility_fixed" model="ir.ui.view">
+        <field name="active" eval="True"/>
+    </record>
+
+    <!-- Footer -->
+    <template id="hb_footer" inherit_id="website.footer_custom" name="Hans Buyck: footer">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                <section class="s_text_block pt80 pb48" data-snippet="s_text_block" data-name="Footer">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-lg-4">
+                                <img src="/website_hansbuyck/static/src/img/logo.png" alt="Hans Buyck ramen en deuren" class="hb_footer_logo mb-4"/>
+                                <p>De onderneming Hans Buyck BVBA uit Kortrijk is reeds vele jaren actief in de verkoop en plaatsing van ramen en deuren, veranda's en lichtstraten in PVC, aluminium en hout.</p>
+                                <p class="fw-bold mb-3">Kwaliteit, prijs, vertrouwen, eerlijkheid: daar staan wij voor!</p>
+                                <a href="https://www.facebook.com/Hans-Buyck-BVBA-309438772835193/" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm"><i class="oi me-1" data-icon="oi_facebook"/> Volg ons op Facebook</a>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <h5>Contact</h5>
+                                <ul class="list-unstyled hb_footer_list">
+                                    <li><i class="oi oi-filled me-2" data-icon="location_on"/>O.L.Vrouwestraat 31<br/><span class="ms-4">8500 Kortrijk</span></li>
+                                    <li><i class="oi oi-filled me-2" data-icon="phone"/><a href="tel:+3256253949">Tel: 056 25 39 49</a></li>
+                                    <li><i class="oi oi-filled me-2" data-icon="mail"/><a href="mailto:info@hansbuyck.be">info@hansbuyck.be</a></li>
+                                    <li class="small opacity-75 mt-2">BTW: BE0455.307.913</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <h5>Openingsuren</h5>
+                                <ul class="list-unstyled hb_footer_list"><li><strong>Maandag – vrijdag</strong><br/>9u – 12u &amp; 13u30 – 17u</li><li><strong>Zaterdag</strong><br/>10u – 12u</li><li><strong>Of na afspraak</strong><br/>ook buiten de openingsuren</li></ul>
+                            </div>
+                            <div class="col-lg-2">
+                                <h5>Producten</h5>
+                                <ul class="list-unstyled hb_footer_list"><li><a href="/producten/ramen">Ramen</a></li><li><a href="/producten/deuren">Deuren</a></li><li><a href="/producten/tuinkamers">Tuinkamers</a></li><li><a href="/producten/lichtstraten">Lichtstraten</a></li><li><a href="/producten/verandas">Veranda's</a></li><li><a href="/producten/glaswerken">Glaswerken</a></li></ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Copyright + juridische links -->
+    <template id="hb_footer_copyright" inherit_id="website.footer_copyright_company_name" name="Hans Buyck: copyright">
+        <xpath expr="//span[hasclass('o_footer_copyright_name')]" position="replace">
+            <span class="o_footer_copyright_name small hb_legal" t-ignore="true">
+                © <span t-out="datetime.date.today().year"/> Hans Buyck BVBA
+                <span class="mx-2">|</span><a href="/disclaimer">Disclaimer</a>
+                <span class="mx-2">|</span><a href="/privacyverklaring">Privacyverklaring</a>
+                <span class="mx-2">|</span><a href="/cookieverklaring">Cookieverklaring</a>
+            </span>
+        </xpath>
+    </template>
+</odoo>

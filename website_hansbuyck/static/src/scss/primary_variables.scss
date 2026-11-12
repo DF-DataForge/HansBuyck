@@ -1,0 +1,64 @@
+// ---------------------------------------------------------------------------
+// Hans Buyck – huisstijl als Odoo website-palet
+// Geel (#FEF013) uit het originele logo/menu, gecombineerd met antraciet.
+// Alles blijft aanpasbaar via Website > Thema in de builder.
+// ---------------------------------------------------------------------------
+
+$o-theme-font-configs: map-merge($o-theme-font-configs, (
+    'Barlow Condensed': (
+        'family': ('Barlow Condensed', sans-serif),
+        'url': 'Barlow+Condensed:400,500,600,700,800',
+    ),
+    'Barlow': (
+        'family': ('Barlow', sans-serif),
+        'url': 'Barlow:300,400,400i,500,600,700',
+    ),
+));
+
+$o-color-palettes: map-merge($o-color-palettes, (
+    'hansbuyck': (
+        'o-color-1': #FEF013, // merkgeel
+        'o-color-2': #2B2B2B, // antraciet
+        'o-color-3': #F4F4EF, // warm lichtgrijs
+        'o-color-4': #FFFFFF,
+        'o-color-5': #151515, // bijna zwart
+        'menu': 1,
+        'footer': 5,
+        'copyright': 5,
+    ),
+));
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'hansbuyck');
+
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'hansbuyck',
+
+        'font': 'Barlow',
+        'headings-font': 'Barlow Condensed',
+        'navbar-font': 'Barlow Condensed',
+        'buttons-font': 'Barlow Condensed',
+        'headings-font-weight': 700,
+        'font-size-base': 1.0625rem,
+        'body-line-height': 1.65,
+
+        'btn-padding-y': .6rem,
+        'btn-padding-x': 1.4rem,
+        'btn-padding-y-lg': .9rem,
+        'btn-padding-x-lg': 2rem,
+        'btn-border-radius': .25rem,
+        'btn-border-radius-lg': .25rem,
+        'btn-border-radius-sm': .25rem,
+        'btn-font-weight': 600,
+
+        'input-border-radius': .25rem,
+
+        'header-template': 'default',
+        'header-font-size': 1.15rem,
+        'header-links-style': 'border-bottom',
+        'logo-height': 3.5rem,
+        'menu-shadow-class': 'shadow-sm',
+        'footer-template': 'default',
+        'footer-scrolltop': true,
+    ),
+);

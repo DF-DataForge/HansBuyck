@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- 301-redirects van de oude hansbuyck.be URL's, zodat Google-rankings en links behouden blijven -->
+    <record id="rewrite_01" model="website.rewrite">
+        <field name="name">Oude site: /producten/ramen_pvc_aluminium_hout_en_alu_hout_2</field>
+        <field name="url_from">/producten/ramen_pvc_aluminium_hout_en_alu_hout_2</field>
+        <field name="url_to">/producten/ramen</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_02" model="website.rewrite">
+        <field name="name">Oude site: /producten/deuren_pvc_aluminium_hout_en_alu_hout_3</field>
+        <field name="url_from">/producten/deuren_pvc_aluminium_hout_en_alu_hout_3</field>
+        <field name="url_to">/producten/deuren</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_03" model="website.rewrite">
+        <field name="name">Oude site: /producten/tuinkamers_4</field>
+        <field name="url_from">/producten/tuinkamers_4</field>
+        <field name="url_to">/producten/tuinkamers</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_04" model="website.rewrite">
+        <field name="name">Oude site: /producten/lichtstraten_5</field>
+        <field name="url_from">/producten/lichtstraten_5</field>
+        <field name="url_to">/producten/lichtstraten</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_05" model="website.rewrite">
+        <field name="name">Oude site: /producten/veranda_s_6</field>
+        <field name="url_from">/producten/veranda_s_6</field>
+        <field name="url_to">/producten/verandas</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_06" model="website.rewrite">
+        <field name="name">Oude site: /producten/glaswerken_in_veiligheidsglas_isolerend_zonnewerend_7</field>
+        <field name="url_from">/producten/glaswerken_in_veiligheidsglas_isolerend_zonnewerend_7</field>
+        <field name="url_to">/producten/glaswerken</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_07" model="website.rewrite">
+        <field name="name">Oude site: /beurzen/bisbeurs_gent_2</field>
+        <field name="url_from">/beurzen/bisbeurs_gent_2</field>
+        <field name="url_to">/beurzen/bis-gent</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_08" model="website.rewrite">
+        <field name="name">Oude site: /beurzen/bouwxpo_kortrijk_3</field>
+        <field name="url_from">/beurzen/bouwxpo_kortrijk_3</field>
+        <field name="url_to">/beurzen/bouwxpo-kortrijk</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_09" model="website.rewrite">
+        <field name="name">Oude site: /beurzen/b_en_w_nu_brugge_4</field>
+        <field name="url_from">/beurzen/b_en_w_nu_brugge_4</field>
+        <field name="url_to">/beurzen/bouwen-wonen-nu-brugge</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_10" model="website.rewrite">
+        <field name="name">Oude site: /beurzen/bouwbeurs_roeselare_5</field>
+        <field name="url_from">/beurzen/bouwbeurs_roeselare_5</field>
+        <field name="url_to">/beurzen/bouwbeurs-roeselare</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_11" model="website.rewrite">
+        <field name="name">Oude site: /gdpr</field>
+        <field name="url_from">/gdpr</field>
+        <field name="url_to">/disclaimer</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_12" model="website.rewrite">
+        <field name="name">Oude site: /gdpr/disclaimer_1</field>
+        <field name="url_from">/gdpr/disclaimer_1</field>
+        <field name="url_to">/disclaimer</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_13" model="website.rewrite">
+        <field name="name">Oude site: /gdpr/privacystatement_1</field>
+        <field name="url_from">/gdpr/privacystatement_1</field>
+        <field name="url_to">/privacyverklaring</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_14" model="website.rewrite">
+        <field name="name">Oude site: /gdpr/privacystatement_2</field>
+        <field name="url_from">/gdpr/privacystatement_2</field>
+        <field name="url_to">/privacyverklaring</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_15" model="website.rewrite">
+        <field name="name">Oude site: /gdpr/cookieverklaring_3</field>
+        <field name="url_from">/gdpr/cookieverklaring_3</field>
+        <field name="url_to">/cookieverklaring</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_16" model="website.rewrite">
+        <field name="name">Oude site: /contactus</field>
+        <field name="url_from">/contactus</field>
+        <field name="url_to">/contact</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_17" model="website.rewrite">
+        <field name="name">Oude site: /contactus-thank-you</field>
+        <field name="url_from">/contactus-thank-you</field>
+        <field name="url_to">/contact-bedankt</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_18" model="website.rewrite">
+        <field name="name">Oude site: /cookie-policy</field>
+        <field name="url_from">/cookie-policy</field>
+        <field name="url_to">/cookieverklaring</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_19" model="website.rewrite">
+        <field name="name">Oude site: /privacy</field>
+        <field name="url_from">/privacy</field>
+        <field name="url_to">/privacyverklaring</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_20" model="website.rewrite">
+        <field name="name">Oude site: /uploads/HANSBUYCKFOLDER2011.pdf</field>
+        <field name="url_from">/uploads/HANSBUYCKFOLDER2011.pdf</field>
+        <field name="url_to">/website_hansbuyck/static/pdf/HANSBUYCKFOLDER2011.pdf</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_21" model="website.rewrite">
+        <field name="name">Oude site: /uploads/ALU_ELITH_NL.pdf</field>
+        <field name="url_from">/uploads/ALU_ELITH_NL.pdf</field>
+        <field name="url_to">/website_hansbuyck/static/pdf/ALU_ELITH_NL.pdf</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_22" model="website.rewrite">
+        <field name="name">Oude site: /uploads/ALU_MOVITH_NL.pdf</field>
+        <field name="url_from">/uploads/ALU_MOVITH_NL.pdf</field>
+        <field name="url_to">/website_hansbuyck/static/pdf/ALU_MOVITH_NL.pdf</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_23" model="website.rewrite">
+        <field name="name">Oude site: /uploads/ALU_SUMITH_NL.pdf</field>
+        <field name="url_from">/uploads/ALU_SUMITH_NL.pdf</field>
+        <field name="url_to">/website_hansbuyck/static/pdf/ALU_SUMITH_NL.pdf</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_24" model="website.rewrite">
+        <field name="name">Oude site: /uploads/ALU_ZENITH_NL(2).pdf</field>
+        <field name="url_from">/uploads/ALU_ZENITH_NL(2).pdf</field>
+        <field name="url_to">/website_hansbuyck/static/pdf/ALU_ZENITH_NL.pdf</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_25" model="website.rewrite">
+        <field name="name">Oude site: /uploads/PVC_ELITE_NL.pdf</field>
+        <field name="url_from">/uploads/PVC_ELITE_NL.pdf</field>
+        <field name="url_to">/website_hansbuyck/static/pdf/PVC_ELITE_NL.pdf</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_26" model="website.rewrite">
+        <field name="name">Oude site: /uploads/PVC_SUMITH_NL.pdf</field>
+        <field name="url_from">/uploads/PVC_SUMITH_NL.pdf</field>
+        <field name="url_to">/website_hansbuyck/static/pdf/PVC_SUMITH_NL.pdf</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_27" model="website.rewrite">
+        <field name="name">Oude site: /uploads/PVC_ZENITH_NL.pdf</field>
+        <field name="url_from">/uploads/PVC_ZENITH_NL.pdf</field>
+        <field name="url_to">/website_hansbuyck/static/pdf/PVC_ZENITH_NL.pdf</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_28" model="website.rewrite">
+        <field name="name">Oude site: /uploads/bois-duesy-nl.pdf</field>
+        <field name="url_from">/uploads/bois-duesy-nl.pdf</field>
+        <field name="url_to">/website_hansbuyck/static/pdf/bois-duesy-nl.pdf</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_29" model="website.rewrite">
+        <field name="name">Oude site: /uploads/bois-rolly-nl.pdf</field>
+        <field name="url_from">/uploads/bois-rolly-nl.pdf</field>
+        <field name="url_to">/website_hansbuyck/static/pdf/bois-rolly-nl.pdf</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_30" model="website.rewrite">
+        <field name="name">Oude site: /uploads/mixte-duesy-nl.pdf</field>
+        <field name="url_from">/uploads/mixte-duesy-nl.pdf</field>
+        <field name="url_to">/website_hansbuyck/static/pdf/mixte-duesy-nl.pdf</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_31" model="website.rewrite">
+        <field name="name">Oude site: /uploads/mixte-questy-nl.pdf</field>
+        <field name="url_from">/uploads/mixte-questy-nl.pdf</field>
+        <field name="url_to">/website_hansbuyck/static/pdf/mixte-questy-nl.pdf</field>
+        <field name="redirect_type">301</field>
+    </record>
+    <record id="rewrite_32" model="website.rewrite">
+        <field name="name">Oude site: /uploads/mixte-rolly-nl.pdf</field>
+        <field name="url_from">/uploads/mixte-rolly-nl.pdf</field>
+        <field name="url_to">/website_hansbuyck/static/pdf/mixte-rolly-nl.pdf</field>
+        <field name="redirect_type">301</field>
+    </record>
+</odoo>

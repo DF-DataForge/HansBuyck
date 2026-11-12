@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="homepage" inherit_id="website.homepage" name="Hans Buyck: home">
+        <xpath expr="//div[@id='wrap']" position="replace">
+<div id="wrap" class="oe_structure">
+
+<!-- HERO -->
+<section class="s_carousel_wrapper hb_hero p-0" data-snippet="s_carousel" data-name="Hero slider" data-vxml="001" data-vcss="001">
+    <div id="hb_hero_carousel" class="s_carousel s_carousel_default carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="8000">
+        <div class="carousel-indicators o_not_editable" role="tablist"><button type="button" data-bs-target="#hb_hero_carousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" role="tab" aria-selected="true"/><button type="button" data-bs-target="#hb_hero_carousel" data-bs-slide-to="1" class="" aria-label="Slide 2" role="tab" aria-selected="false"/><button type="button" data-bs-target="#hb_hero_carousel" data-bs-slide-to="2" class="" aria-label="Slide 3" role="tab" aria-selected="false"/></div>
+        <div class="carousel-inner">
+            <div class="carousel-item active oe_img_bg o_bg_img_center o_cc o_cc5 " style="background-image: url('/website_hansbuyck/static/src/img/hero_2.webp');" data-name="Slide">
+                <div class="o_we_bg_filter"/>
+                <div class="container oe_unremovable">
+                    <div class="row">
+                        <div class="carousel-content col-lg-8 col-xl-7 pt64 pb128">
+                            <span class="hb_eyebrow text-white">Hans Buyck · ramen &amp; deuren · Kortrijk</span>
+                            <h1 class="hb_title_xl text-white mb-4">Ramen en deuren in <span class="hb_text_yellow">alu, PVC, hout en alu/hout</span></h1>
+                            <p class="hb_lead text-white mb-4" style="max-width: 36rem;">Verkoop én plaatsing door ons eigen team – met de uiterste zorg en volgens de regels van het vakmanschap.</p>
+                            <p class="mb-0"><a href="/producten" class="btn btn-primary btn-lg me-2 mb-2">Ontdek onze producten</a><a href="/contact" class="btn btn-outline-light btn-lg me-2 mb-2">Vrijblijvende offerte</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item oe_img_bg o_bg_img_center o_cc o_cc5 hb_desaturate" style="background-image: url('/website_hansbuyck/static/src/img/hero_1.webp');" data-name="Slide">
+                <div class="o_we_bg_filter"/>
+                <div class="container oe_unremovable">
+                    <div class="row">
+                        <div class="carousel-content col-lg-8 col-xl-7 pt64 pb128">
+                            <span class="hb_eyebrow text-white">Hans Buyck · ramen &amp; deuren · Kortrijk</span>
+                            <h2 class="hb_title_xl text-white mb-4">Rolluiken, screens &amp; nieuwe beglazing</h2>
+                            <p class="hb_lead text-white mb-4" style="max-width: 36rem;">Van superisolerend glas tot 3-dubbel glas. Wij vervangen uw bestaande beglazing vakkundig.</p>
+                            <p class="mb-0"><a href="/producten/glaswerken" class="btn btn-primary btn-lg me-2 mb-2">Lees meer</a><a href="/vragen" class="btn btn-outline-light btn-lg me-2 mb-2">Veelgestelde vragen</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item oe_img_bg o_bg_img_center o_cc o_cc5 " style="background-image: url('/website_hansbuyck/static/src/img/hero_3.webp');" data-name="Slide">
+                <div class="o_we_bg_filter"/>
+                <div class="container oe_unremovable">
+                    <div class="row">
+                        <div class="carousel-content col-lg-8 col-xl-7 pt64 pb128">
+                            <span class="hb_eyebrow text-white">Hans Buyck · ramen &amp; deuren · Kortrijk</span>
+                            <h2 class="hb_title_xl text-white mb-4">Kom langs in onze toonzaal in Kortrijk</h2>
+                            <p class="hb_lead text-white mb-4" style="max-width: 36rem;">Ontdek ons gamma en talrijke referenties vrijblijvend. Open iedere dag of na afspraak.</p>
+                            <p class="mb-0"><a href="/contact" class="btn btn-primary btn-lg me-2 mb-2">Plan uw bezoek</a><a href="/beurzen" class="btn btn-outline-light btn-lg me-2 mb-2">Of zie ons op een beurs</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev o_not_editable" contenteditable="false" data-bs-target="#hb_hero_carousel" data-bs-slide="prev" aria-label="Vorige" title="Vorige"><span class="carousel-control-prev-icon" aria-hidden="true"/></button>
+        <button class="carousel-control-next o_not_editable" contenteditable="false" data-bs-target="#hb_hero_carousel" data-bs-slide="next" aria-label="Volgende" title="Volgende"><span class="carousel-control-next-icon" aria-hidden="true"/></button>
+    </div>
+</section>
+
+<!-- USP -->
+<section class="hb_usp pb48" data-snippet="s_features" data-name="Troeven">
+    <div class="container">
+        <div class="row hb_usp_inner g-0 py-4">
+                    <div class="col-sm-6 col-lg-3 hb_usp_item px-4 py-2">
+                        <i class="oi oi-filled" data-icon="build"/>
+                        <div><h3>Eigen plaatsers</h3><p>Uw ramen en deuren worden geplaatst door ons eigen personeel.</p></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 hb_usp_item px-4 py-2">
+                        <i class="oi oi-filled" data-icon="storefront"/>
+                        <div><h3>Toonzaal in Kortrijk</h3><p>Bekijk ons gamma en onze referenties ter plaatse.</p></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 hb_usp_item px-4 py-2">
+                        <i class="oi oi-filled" data-icon="description"/>
+                        <div><h3>Vrijblijvende offerte</h3><p>Na een plaatsbezoek krijgt u een correcte prijs.</p></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 hb_usp_item px-4 py-2">
+                        <i class="oi oi-filled" data-icon="verified"/>
+                        <div><h3>Pierret-System</h3><p>Exclusief gamma van de Belgische ramen- en deurengigant.</p></div>
+                    </div>
+        </div>
+    </div>
+</section>
+
+<!-- WELKOM -->
+<section class="s_text_image pt64 pb96" data-snippet="s_text_image" data-name="Welkom">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="hb_eyebrow">Welkom</span>
+                <h2 class="hb_title_lg mb-4">Welkom bij Hans Buyck, ramen en deuren in <span class="hb_mark">Kortrijk</span></h2>
+                <p class="hb_lead">De onderneming Hans Buyck BVBA uit Kortrijk is reeds vele jaren actief in de verkoop en plaatsing van <strong>ramen</strong> en <strong>deuren</strong>, veranda's en lichtstraten in PVC, aluminium en hout.</p>
+                <p>Dankzij het vertrouwen dat vele klanten in ons gesteld hebben, is onze organisatie uitgegroeid tot één van de toonaangevende regionale ondernemingen in renovatie en nieuwbouw van ramen en deuren.</p>
+                <p>Hans Buyck BVBA verdeelt met de Belgische ramen- en deurengigant <strong>Pierret-System</strong> een exclusief gamma. Kom ons gamma en talrijke referenties vrijblijvend ontdekken in onze toonzaal. Uw ramen en deuren worden steeds met de uiterste zorg en volgens de regels van het vakmanschap geplaatst door ons eigen personeel.</p>
+                <p class="mt-4"><a href="/producten" class="hb_arrow_link">Bekijk ons aanbod <i class="oi oi-filled" data-icon="east"/></a></p>
+            </div>
+            <div class="col-lg-6">
+                <div class="hb_collage">
+                    <img src="/website_hansbuyck/static/src/img/prod_ramen_19.webp" alt="Ramen geplaatst door Hans Buyck" class="img-fluid w-100" loading="lazy" style="aspect-ratio: 4/3; object-fit: cover;"/>
+                    <div class="hb_collage_badge"><strong>Van superisolerend</strong>tot 3-dubbel glas</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MARQUEE -->
+<section class="hb_marquee" data-name="Lichtkrant" aria-hidden="true">
+    <div class="hb_marquee_track o_not_editable"><span>Ramen en deuren in alu – PVC – hout – alu/hout</span><span class="hb_sep">✦</span><span>Plaatsen van rolluiken – screens</span><span class="hb_sep">✦</span><span>Vervangen van bestaande beglazing</span><span class="hb_sep">✦</span><span>Veranda's – tuinkamers – lichtstraten</span><span class="hb_sep">✦</span><span>Ramen en deuren in alu – PVC – hout – alu/hout</span><span class="hb_sep">✦</span><span>Plaatsen van rolluiken – screens</span><span class="hb_sep">✦</span><span>Vervangen van bestaande beglazing</span><span class="hb_sep">✦</span><span>Veranda's – tuinkamers – lichtstraten</span><span class="hb_sep">✦</span></div>
+</section>
+
+<!-- PRODUCTEN -->
+<section class="pt96 pb96 o_cc o_cc2" data-snippet="s_three_columns" data-name="Producten" style="background-color: var(--hb-light);">
+    <div class="container">
+        <div class="row align-items-end mb-5 g-3">
+            <div class="col-lg-8">
+                <span class="hb_eyebrow">Buitenschrijnwerk</span>
+                <h2 class="hb_title_lg mb-0">Ons aanbod</h2>
+            </div>
+            <div class="col-lg-4 text-lg-end"><a href="/producten" class="hb_arrow_link">Alle producten <i class="oi oi-filled" data-icon="east"/></a></div>
+        </div>
+        <div class="row g-4">
+<div class="col-md-6 col-lg-4">
+    <a href="/producten/ramen" class="hb_card">
+        <div class="hb_card_img"><img src="/website_hansbuyck/static/src/img/prod_ramen_cover.webp" alt="Ramen – Hans Buyck" loading="lazy" class="img-fluid"/></div>
+        <div class="hb_card_body">
+            <h3>Ramen</h3>
+            <p>Superisolerend tot 3-dubbel glas, in elke stijl en kleur.</p>
+            <span class="hb_card_more">Ontdek <i class="oi oi-filled ms-1" data-icon="east"/></span>
+        </div>
+    </a>
+</div>
+<div class="col-md-6 col-lg-4">
+    <a href="/producten/deuren" class="hb_card">
+        <div class="hb_card_img"><img src="/website_hansbuyck/static/src/img/prod_deuren_cover.webp" alt="Deuren – Hans Buyck" loading="lazy" class="img-fluid"/></div>
+        <div class="hb_card_body">
+            <h3>Deuren</h3>
+            <p>Veilige, isolerende voordeuren met karakter.</p>
+            <span class="hb_card_more">Ontdek <i class="oi oi-filled ms-1" data-icon="east"/></span>
+        </div>
+    </a>
+</div>
+<div class="col-md-6 col-lg-4">
+    <a href="/producten/tuinkamers" class="hb_card">
+        <div class="hb_card_img"><img src="/website_hansbuyck/static/src/img/prod_tuinkamers_cover.webp" alt="Tuinkamers – Hans Buyck" loading="lazy" class="img-fluid"/></div>
+        <div class="hb_card_body">
+            <h3>Tuinkamers</h3>
+            <p>Een vrijstaande veranda, midden in uw tuin.</p>
+            <span class="hb_card_more">Ontdek <i class="oi oi-filled ms-1" data-icon="east"/></span>
+        </div>
+    </a>
+</div>
+<div class="col-md-6 col-lg-4">
+    <a href="/producten/lichtstraten" class="hb_card">
+        <div class="hb_card_img"><img src="/website_hansbuyck/static/src/img/prod_lichtstraten_cover.webp" alt="Lichtstraten – Hans Buyck" loading="lazy" class="img-fluid"/></div>
+        <div class="hb_card_body">
+            <h3>Lichtstraten</h3>
+            <p>Elegant afgewerkt, hoog isolerend, in alle RAL-kleuren.</p>
+            <span class="hb_card_more">Ontdek <i class="oi oi-filled ms-1" data-icon="east"/></span>
+        </div>
+    </a>
+</div>
+<div class="col-md-6 col-lg-4">
+    <a href="/producten/verandas" class="hb_card">
+        <div class="hb_card_img"><img src="/website_hansbuyck/static/src/img/prod_verandas_cover.webp" alt="Veranda's – Hans Buyck" loading="lazy" class="img-fluid"/></div>
+        <div class="hb_card_body">
+            <h3>Veranda's</h3>
+            <p>Extra leefruimte die woning en tuin verbindt.</p>
+            <span class="hb_card_more">Ontdek <i class="oi oi-filled ms-1" data-icon="east"/></span>
+        </div>
+    </a>
+</div>
+<div class="col-md-6 col-lg-4">
+    <a href="/producten/glaswerken" class="hb_card">
+        <div class="hb_card_img"><img src="/website_hansbuyck/static/src/img/prod_glaswerken_cover.webp" alt="Glaswerken – Hans Buyck" loading="lazy" class="img-fluid"/></div>
+        <div class="hb_card_body">
+            <h3>Glaswerken</h3>
+            <p>Bestaande beglazing vervangen: dubbele winst.</p>
+            <span class="hb_card_more">Ontdek <i class="oi oi-filled ms-1" data-icon="east"/></span>
+        </div>
+    </a>
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- WERKWIJZE -->
+<section class="pt96 pb96" data-snippet="s_process_steps" data-name="Werkwijze">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="hb_eyebrow">Werkwijze</span>
+            <h2 class="hb_title_lg">Zo werken wij</h2>
+        </div>
+        <div class="row g-4 hb_steps"><div class="col-md-6 col-lg-3"><div class="hb_step"><h3>Advies in de toonzaal</h3><p>Kom langs met uw plannen of afmetingen. We maken al een eerste raming en adviseren u over materialen en glas.</p></div></div><div class="col-md-6 col-lg-3"><div class="hb_step"><h3>Plaatsbezoek &amp; offerte</h3><p>Voor een correcte offerte komen we steeds ter plaatse opmeten. Volledig vrijblijvend.</p></div></div><div class="col-md-6 col-lg-3"><div class="hb_step"><h3>Productie op maat</h3><p>Uw ramen en deuren worden op maat gemaakt, in de stijl en kleur van uw keuze.</p></div></div><div class="col-md-6 col-lg-3"><div class="hb_step"><h3>Plaatsing door ons team</h3><p>Ons eigen personeel plaatst met de uiterste zorg: bij nieuwbouw meestal in 1 dag, bij renovatie 2 à 5 werkdagen.</p></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- VIDEO + REGIO -->
+<section class="o_cc o_cc5 pt96 pb96" data-snippet="s_text_image" data-name="Video en regio">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="hb_video o_not_editable">
+                    <iframe src="https://www.youtube-nocookie.com/embed/dMczXHaHyUk?rel=0" title="Video Hans Buyck ramen en deuren" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <span class="hb_eyebrow text-white">Bekijk onze video</span>
+                <h2 class="hb_title_lg text-white mb-4">Mooie ramen voor heel West-Vlaanderen</h2>
+                <p class="hb_lead">Ramen en deuren in de regio Kortrijk? U vindt het bij ons. En ook daarbuiten zijn we graag van dienst:</p>
+                <div class="hb_chips my-4"><span>Kortrijk</span><span>Harelbeke</span><span>Heule</span><span>Ardooie</span><span>Ingelmunster</span><span>Bavikhove</span><span>Zwevegem</span><span>Wevelgem</span><span>Bissegem</span><span>Roeselare</span><span>Brugge</span><span>tot aan de Kust</span></div>
+                <a href="/contact" class="btn btn-primary btn-lg">Vraag uw offerte aan</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TEGELS -->
+<section class="pt96 pb64" data-snippet="s_three_columns" data-name="Ontdek meer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <a href="/beurzen" class="hb_tile"><img src="/website_hansbuyck/static/src/img/prod_verandas_06.webp" alt="Beurzen" loading="lazy"/>
+                    <div class="hb_tile_body"><h3>Beurzen</h3><p class="mb-2">Ontmoet ons op de bouwbeurzen in de regio.</p><span class="hb_tile_more">Beurzenkalender →</span></div></a>
+            </div>
+            <div class="col-lg-4">
+                <a href="/folders" class="hb_tile"><img src="/website_hansbuyck/static/src/img/prod_deuren_29.webp" alt="Folders" loading="lazy"/>
+                    <div class="hb_tile_body"><h3>Folders</h3><p class="mb-2">Download de technische fiches van onze systemen.</p><span class="hb_tile_more">Bekijk folders →</span></div></a>
+            </div>
+            <div class="col-lg-4">
+                <a href="/vragen" class="hb_tile"><img src="/website_hansbuyck/static/src/img/prod_ramen_20.webp" alt="Vragen" loading="lazy"/>
+                    <div class="hb_tile_body"><h3>Vragen</h3><p class="mb-2">Premies, plaatsing, onderhoud… wij antwoorden.</p><span class="hb_tile_more">Naar de FAQ →</span></div></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="hb_insta pt48 pb96" data-snippet="s_images_wall" data-name="Instagram">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="hb_eyebrow">Realisaties</span>
+            <h2 class="hb_title_lg">Volg ons op Instagram</h2>
+        </div>
+        <div class="row g-3"><div class="col-6 col-lg-3"><a href="https://www.instagram.com/p/CfJGSv5oNMZ/" target="_blank" rel="noopener"><img src="/website_hansbuyck/static/src/img/insta_1.webp" alt="Realisatie Hans Buyck op Instagram" loading="lazy" class="img-fluid"/></a></div><div class="col-6 col-lg-3"><a href="https://www.instagram.com/p/CcXQjctIJru/" target="_blank" rel="noopener"><img src="/website_hansbuyck/static/src/img/insta_2.webp" alt="Realisatie Hans Buyck op Instagram" loading="lazy" class="img-fluid"/></a></div><div class="col-6 col-lg-3"><a href="https://www.instagram.com/p/CcVpNZ0IzTN/" target="_blank" rel="noopener"><img src="/website_hansbuyck/static/src/img/insta_3.webp" alt="Realisatie Hans Buyck op Instagram" loading="lazy" class="img-fluid"/></a></div><div class="col-6 col-lg-3"><a href="https://www.instagram.com/p/CaU1X1vIOdn/" target="_blank" rel="noopener"><img src="/website_hansbuyck/static/src/img/insta_4.webp" alt="Realisatie Hans Buyck op Instagram" loading="lazy" class="img-fluid"/></a></div></div>
+    </div>
+</section>
+
+<section class="hb_cta s_call_to_action o_cc o_cc1 pt80 pb80" data-snippet="s_call_to_action" data-name="Call to action" style="background-color: var(--hb-yellow);">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+                <h2 class="hb_title_lg mb-3">Klaar voor nieuwe ramen of deuren?</h2>
+                <p class="hb_lead mb-0">Kom langs in onze toonzaal in Kortrijk of vraag een vrijblijvende offerte aan. Wij komen graag ter plaatse voor een correcte prijs.</p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+                <a href="tel:+3256253949" class="hb_cta_phone d-inline-block mb-3"><i class="oi oi-filled me-2" data-icon="phone"/>056 25 39 49</a><br/>
+                <a href="/contact" class="btn btn-dark btn-lg me-2 mb-2">Vrijblijvende offerte</a>
+                <a href="/producten" class="btn btn-outline-dark btn-lg mb-2">Onze producten</a>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+        </xpath>
+    </template>
+</odoo>
